@@ -53,10 +53,10 @@ namespace StudentManagementSystem.Forms
                 MessageBox.Show("Timetable module - not implemented yet.");
             });
 
-            AddMenuButton("Reports & Dashboard", 320, (s, e) =>
+            AddMenuButton("Report Card Export", 320, (s, e) =>
             {
-                // Member 8: replace with `new DashboardForm().Show();`
-                MessageBox.Show("Reports module - not implemented yet.");
+                // Member 8: replace with `new StudentReportForm().Show();`
+                MessageBox.Show("Report Card Export module - not implemented yet.");
             });
         }
 

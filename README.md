@@ -40,7 +40,7 @@ StudentManagementSystem/
 | 5      | Grades             | New `Forms/GradesForm.cs`; use `IGradable` on `Student`              |
 | 6      | Fees               | New `Forms/FeesForm.cs`; use `IPayable` on `Student`                 |
 | 7      | Timetable          | New `Forms/TimetableForm.cs`; use `Course.AssignedTeacher`           |
-| 8      | Reports/Dashboard  | New `Forms/DashboardForm.cs`; queries across all of the above        |
+| 8      | Report Card Export | `Forms/StudentReportForm.cs` (already stubbed); pulls attendance/grades/fees for one student ID and exports/prints it |
 
 ## Ground rules
 
