@@ -1,4 +1,4 @@
-﻿namespace StudentManagementSystem.Forms
+namespace StudentManagementSystem.Forms
 {
     partial class MainMenuForm
     {
@@ -77,38 +77,142 @@
             this.pnlButtons.Size = new System.Drawing.Size(744, 350);
             this.pnlButtons.TabIndex = 1;
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(236, 240, 241);
-            // Shared button style helper
-            System.Action<System.Windows.Forms.Button, string, System.Drawing.Color> styleBtn =
-                (b, txt, clr) => {
-                    b.BackColor = clr;
-                    b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                    b.FlatAppearance.BorderSize = 0;
-                    b.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-                    b.ForeColor = System.Drawing.Color.White;
-                    b.Text = txt;
-                    b.Dock = System.Windows.Forms.DockStyle.Fill;
-                    b.Margin = new System.Windows.Forms.Padding(8);
-                    b.UseVisualStyleBackColor = false;
-                    b.Cursor = System.Windows.Forms.Cursors.Hand;
-                };
-            var dark  = System.Drawing.Color.FromArgb(52, 73, 94);
-            var blue  = System.Drawing.Color.FromArgb(41, 128, 185);
-            styleBtn(this.btnAuth,           "1.  Auth / Roles",           dark);
-            styleBtn(this.btnStudentRecords, "2.  Student Records",        dark);
-            styleBtn(this.btnCourses,        "3.  Course Management",      blue);
-            styleBtn(this.btnAttendance,     "4.  Attendance",             dark);
-            styleBtn(this.btnGrades,         "5.  Grades",                 dark);
-            styleBtn(this.btnFees,           "6.  Fees",                   dark);
-            styleBtn(this.btnTimetable,      "7.  Timetable",              dark);
-            styleBtn(this.btnReportCard,     "8.  Report Card Export",     dark);
-            this.btnAuth.Click          += new System.EventHandler(this.btnAuth_Click);
+            // 
+            // btnAuth
+            // 
+            this.btnAuth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAuth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAuth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAuth.FlatAppearance.BorderSize = 0;
+            this.btnAuth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuth.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAuth.ForeColor = System.Drawing.Color.White;
+            this.btnAuth.Margin = new System.Windows.Forms.Padding(8);
+            this.btnAuth.Name = "btnAuth";
+            this.btnAuth.Size = new System.Drawing.Size(350, 66);
+            this.btnAuth.TabIndex = 0;
+            this.btnAuth.Text = "1.  Auth / Roles";
+            this.btnAuth.UseVisualStyleBackColor = false;
+            this.btnAuth.Click += new System.EventHandler(this.btnAuth_Click);
+            // 
+            // btnStudentRecords
+            // 
+            this.btnStudentRecords.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnStudentRecords.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStudentRecords.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStudentRecords.FlatAppearance.BorderSize = 0;
+            this.btnStudentRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudentRecords.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnStudentRecords.ForeColor = System.Drawing.Color.White;
+            this.btnStudentRecords.Margin = new System.Windows.Forms.Padding(8);
+            this.btnStudentRecords.Name = "btnStudentRecords";
+            this.btnStudentRecords.Size = new System.Drawing.Size(350, 66);
+            this.btnStudentRecords.TabIndex = 1;
+            this.btnStudentRecords.Text = "2.  Student Records";
+            this.btnStudentRecords.UseVisualStyleBackColor = false;
             this.btnStudentRecords.Click += new System.EventHandler(this.btnStudentRecords_Click);
-            this.btnCourses.Click       += new System.EventHandler(this.btnCourses_Click);
-            this.btnAttendance.Click    += new System.EventHandler(this.btnAttendance_Click);
-            this.btnGrades.Click        += new System.EventHandler(this.btnGrades_Click);
-            this.btnFees.Click          += new System.EventHandler(this.btnFees_Click);
-            this.btnTimetable.Click     += new System.EventHandler(this.btnTimetable_Click);
-            this.btnReportCard.Click    += new System.EventHandler(this.btnReportCard_Click);
+            // 
+            // btnCourses
+            // 
+            this.btnCourses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.btnCourses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCourses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCourses.FlatAppearance.BorderSize = 0;
+            this.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCourses.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnCourses.ForeColor = System.Drawing.Color.White;
+            this.btnCourses.Margin = new System.Windows.Forms.Padding(8);
+            this.btnCourses.Name = "btnCourses";
+            this.btnCourses.Size = new System.Drawing.Size(350, 66);
+            this.btnCourses.TabIndex = 2;
+            this.btnCourses.Text = "3.  Course Management";
+            this.btnCourses.UseVisualStyleBackColor = false;
+            this.btnCourses.Click += new System.EventHandler(this.btnCourses_Click);
+            // 
+            // btnAttendance
+            // 
+            this.btnAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAttendance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAttendance.FlatAppearance.BorderSize = 0;
+            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnAttendance.Margin = new System.Windows.Forms.Padding(8);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(350, 66);
+            this.btnAttendance.TabIndex = 3;
+            this.btnAttendance.Text = "4.  Attendance";
+            this.btnAttendance.UseVisualStyleBackColor = false;
+            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
+            // 
+            // btnGrades
+            // 
+            this.btnGrades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnGrades.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGrades.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGrades.FlatAppearance.BorderSize = 0;
+            this.btnGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrades.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnGrades.ForeColor = System.Drawing.Color.White;
+            this.btnGrades.Margin = new System.Windows.Forms.Padding(8);
+            this.btnGrades.Name = "btnGrades";
+            this.btnGrades.Size = new System.Drawing.Size(350, 66);
+            this.btnGrades.TabIndex = 4;
+            this.btnGrades.Text = "5.  Grades";
+            this.btnGrades.UseVisualStyleBackColor = false;
+            this.btnGrades.Click += new System.EventHandler(this.btnGrades_Click);
+            // 
+            // btnFees
+            // 
+            this.btnFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnFees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFees.FlatAppearance.BorderSize = 0;
+            this.btnFees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFees.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnFees.ForeColor = System.Drawing.Color.White;
+            this.btnFees.Margin = new System.Windows.Forms.Padding(8);
+            this.btnFees.Name = "btnFees";
+            this.btnFees.Size = new System.Drawing.Size(350, 66);
+            this.btnFees.TabIndex = 5;
+            this.btnFees.Text = "6.  Fees";
+            this.btnFees.UseVisualStyleBackColor = false;
+            this.btnFees.Click += new System.EventHandler(this.btnFees_Click);
+            // 
+            // btnTimetable
+            // 
+            this.btnTimetable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnTimetable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimetable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimetable.FlatAppearance.BorderSize = 0;
+            this.btnTimetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimetable.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnTimetable.ForeColor = System.Drawing.Color.White;
+            this.btnTimetable.Margin = new System.Windows.Forms.Padding(8);
+            this.btnTimetable.Name = "btnTimetable";
+            this.btnTimetable.Size = new System.Drawing.Size(350, 66);
+            this.btnTimetable.TabIndex = 6;
+            this.btnTimetable.Text = "7.  Timetable";
+            this.btnTimetable.UseVisualStyleBackColor = false;
+            this.btnTimetable.Click += new System.EventHandler(this.btnTimetable_Click);
+            // 
+            // btnReportCard
+            // 
+            this.btnReportCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnReportCard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReportCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReportCard.FlatAppearance.BorderSize = 0;
+            this.btnReportCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportCard.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnReportCard.ForeColor = System.Drawing.Color.White;
+            this.btnReportCard.Margin = new System.Windows.Forms.Padding(8);
+            this.btnReportCard.Name = "btnReportCard";
+            this.btnReportCard.Size = new System.Drawing.Size(350, 66);
+            this.btnReportCard.TabIndex = 7;
+            this.btnReportCard.Text = "8.  Report Card Export";
+            this.btnReportCard.UseVisualStyleBackColor = false;
+            this.btnReportCard.Click += new System.EventHandler(this.btnReportCard_Click);
             // MainMenuForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

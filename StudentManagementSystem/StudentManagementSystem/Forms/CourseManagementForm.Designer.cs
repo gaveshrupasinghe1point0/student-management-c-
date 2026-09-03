@@ -1,4 +1,4 @@
-﻿namespace StudentManagementSystem.Forms
+namespace StudentManagementSystem.Forms
 {
     partial class CourseManagementForm
     {
@@ -79,24 +79,66 @@
             this.numCredits.Font=new System.Drawing.Font("Segoe UI",9.75F); this.numCredits.Location=new System.Drawing.Point(120,120); this.numCredits.Minimum=new decimal(new int[]{1,0,0,0}); this.numCredits.Maximum=new decimal(new int[]{10,0,0,0}); this.numCredits.Value=new decimal(new int[]{3,0,0,0}); this.numCredits.Size=new System.Drawing.Size(100,25);
             this.lblDepartment.AutoSize=true; this.lblDepartment.Font=new System.Drawing.Font("Segoe UI",9.75F); this.lblDepartment.Location=new System.Drawing.Point(18,168); this.lblDepartment.Name="lblDepartment"; this.lblDepartment.Text="Department:";
             this.txtDepartment.Font=new System.Drawing.Font("Segoe UI",9.75F); this.txtDepartment.Location=new System.Drawing.Point(120,165); this.txtDepartment.Name="txtDepartment"; this.txtDepartment.Size=new System.Drawing.Size(220,25);
-            // Buttons — anchored Bottom+Left
-            System.Action<System.Windows.Forms.Button, string, System.Drawing.Color, int> styleBtn =
-                (b, txt, clr, x) => {
-                    b.BackColor=clr; b.FlatStyle=System.Windows.Forms.FlatStyle.Flat;
-                    b.Font=new System.Drawing.Font("Segoe UI",9.75F,System.Drawing.FontStyle.Bold);
-                    b.ForeColor=System.Drawing.Color.White; b.Text=txt;
-                    b.Location=new System.Drawing.Point(x,330); b.Size=new System.Drawing.Size(85,35);
-                    b.UseVisualStyleBackColor=false;
-                    b.Anchor=System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-                };
-            styleBtn(this.btnAdd,    "Add",    System.Drawing.Color.FromArgb(46,204,113),  24);
-            styleBtn(this.btnUpdate, "Update", System.Drawing.Color.FromArgb(52,152,219),  115);
-            styleBtn(this.btnDelete, "Delete", System.Drawing.Color.FromArgb(231,76,60),   206);
-            styleBtn(this.btnClear,  "Clear",  System.Drawing.Color.FromArgb(149,165,166), 297);
-            this.btnAdd.Click    += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(24, 330);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(85, 35);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(115, 330);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(85, 35);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(206, 330);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 35);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            this.btnClear.Click  += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(297, 330);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(85, 35);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // lblCourseList
             this.lblCourseList.AutoSize=true;
             this.lblCourseList.Anchor=System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;

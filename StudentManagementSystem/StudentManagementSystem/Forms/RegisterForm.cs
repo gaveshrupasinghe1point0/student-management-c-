@@ -42,9 +42,12 @@ namespace StudentManagementSystem.Forms
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+          
+            if (string.IsNullOrWhiteSpace(txtPassword.Text) || txtPassword.Text.Length < 8)
             {
-                MessageBox.Show("Password is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Password must be at least 8 characters long.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPassword.Focus();
                 return;
             }
 
@@ -113,6 +116,11 @@ namespace StudentManagementSystem.Forms
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
