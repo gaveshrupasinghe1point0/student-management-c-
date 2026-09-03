@@ -1,45 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\adolf.h\\source\\repos\\hirundineth123\\groupcsharpproject\\studentmanagementsystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\devin\\source\\repos\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\devin\\source\\repos\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\devin\\source\\repos\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\core\\data\\databasesetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\core\\data\\databasesetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -70,23 +82,84 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\RegisterForm.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:08:34.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs [Design]*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\RegisterForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:08:19.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentRecordsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T18:46:50.724Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentRecordsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs*",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAAIoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T17:03:30.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatabaseSetup.sql ",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
+              "RelativeToolTip": "StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-09-03T18:41:53.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CourseEnrollmentForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:25:41.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CourseManagementForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAtwDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,68 +167,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentRecordsForm.cs",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T17:03:30.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CourseEnrollmentForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:00:55.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentRecordsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T17:00:29.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T17:00:29.009Z"
+              "WhenOpened": "2026-09-02T17:00:29.009Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CourseManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseManagementForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:00:29.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CourseManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,11 +213,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "MainMenuForm.cs",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,11 +225,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "MainMenuForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
-              "ToolTip": "C:\\Users\\Adolf.H\\source\\repos\\hirundineth123\\groupcsharpproject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\MainMenuForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:00:29.013Z"

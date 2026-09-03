@@ -72,13 +72,29 @@ namespace StudentManagementSystem.Forms
                     "Password Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (txtLoginPassword.Text.Length < 8)
+            {
+                MessageBox.Show("Password must be at least 8 characters long.",
+                    "Weak Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLoginPassword.Focus();
+                return;
+            }
+            
+            string email = txtEmail.Text.Trim();
+            if (string.IsNullOrWhiteSpace(email) || !email.EndsWith(".nsbm.ac.lk", StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("Student email must end with @students.nsbm.ac.lk",
+                    "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEmail.Focus();
+                return;
+            }
 
             try
             {
                 var student = BuildStudentFromInputs();
                 _studentRepository.AddStudent(student);
 
-                // Also create a Users account so the student can log in
+                
                 var user = new User
                 {
                     Username = txtLoginUsername.Text.Trim(),
@@ -116,6 +132,16 @@ namespace StudentManagementSystem.Forms
             {
                 MessageBox.Show("Please select a student from the grid to update.",
                     "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            
+            string email = txtEmail.Text.Trim();
+            if (string.IsNullOrWhiteSpace(email) ||
+                !(email.EndsWith("nsbm.ac.lk", StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show("Student email must be an NSBM email address (e.g., nsbm.ac.lk).",
+                    "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEmail.Focus();
                 return;
             }
 

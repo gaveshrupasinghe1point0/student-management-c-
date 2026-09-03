@@ -44,7 +44,7 @@ namespace StudentManagementSystem.Forms
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(50, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(199, 24);
+            this.lblTitle.Size = new System.Drawing.Size(198, 24);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Register New Account";
             // 
@@ -254,8 +254,10 @@ namespace StudentManagementSystem.Forms
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register - Student Management System";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblTitle;

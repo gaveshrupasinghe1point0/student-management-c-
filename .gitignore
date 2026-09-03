@@ -1,0 +1,18 @@
+## Visual Studio temporary and cache files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.vsidx
+*.DocumentLayout.json
+*.SemanticSymbols.db
+
+## Build results and binaries
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+## Visual Studio Rider/VSCode/User specific
+*.sln.docstates
+*.userosscache
