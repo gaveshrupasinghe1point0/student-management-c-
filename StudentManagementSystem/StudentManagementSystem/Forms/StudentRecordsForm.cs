@@ -114,15 +114,18 @@ namespace StudentManagementSystem.Forms
             }
             catch (ValidationException valEx)
             {
-                MessageBox.Show(valEx.Message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(valEx.Message, 
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (DatabaseException dbEx)
             {
-                MessageBox.Show($"Database Error: {dbEx.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Database Error: {dbEx.Message}", 
+                    "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to add student: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to add student: {ex.Message}", 
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -130,7 +133,7 @@ namespace StudentManagementSystem.Forms
         {
             if (_selectedStudentId == 0)
             {
-                MessageBox.Show("Please select a student from the grid to update.",
+                MessageBox.Show("Please select a student from the grid.",
                     "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -139,7 +142,7 @@ namespace StudentManagementSystem.Forms
             if (string.IsNullOrWhiteSpace(email) ||
                 !(email.EndsWith("nsbm.ac.lk", StringComparison.OrdinalIgnoreCase)))
             {
-                MessageBox.Show("Student email must be an NSBM email address (e.g., nsbm.ac.lk).",
+                MessageBox.Show("Student email must be an NSBM email address.",
                     "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtEmail.Focus();
                 return;
@@ -158,15 +161,18 @@ namespace StudentManagementSystem.Forms
             }
             catch (ValidationException valEx)
             {
-                MessageBox.Show(valEx.Message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(valEx.Message, 
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (DatabaseException dbEx)
             {
-                MessageBox.Show($"Database Error: {dbEx.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Database Error: {dbEx.Message}", 
+                    "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to update student: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to update student: {ex.Message}", 
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -174,7 +180,7 @@ namespace StudentManagementSystem.Forms
         {
             if (_selectedStudentId == 0)
             {
-                MessageBox.Show("Please select a student from the grid to delete.",
+                MessageBox.Show("Please select a student from the grid.",
                     "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -189,20 +195,24 @@ namespace StudentManagementSystem.Forms
             {
                 _studentRepository.DeleteStudent(_selectedStudentId);
 
-                MessageBox.Show("Student record deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Student record deleted successfully.", 
+                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadStudents();
             }
             catch (ValidationException valEx)
             {
-                MessageBox.Show(valEx.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(valEx.Message, 
+                    "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (DatabaseException dbEx)
             {
-                MessageBox.Show($"Database Error: {dbEx.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Database Error: {dbEx.Message}", 
+                    "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to delete student: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to delete student: {ex.Message}", 
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
