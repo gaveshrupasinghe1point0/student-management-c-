@@ -2,6 +2,7 @@ using StudentManagementSystem.Core.Data;
 using StudentManagementSystem.Core.Exceptions;
 using StudentManagementSystem.Core.Models;
 using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace StudentManagementSystem.Forms
@@ -64,6 +65,24 @@ namespace StudentManagementSystem.Forms
             {
                 MessageBox.Show($"An unexpected error occurred: {ex.Message}",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string targetUrl = "https://www.nsbm.ac.lk/";
+
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = targetUrl,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open link: " + ex.Message);
             }
         }
     }
