@@ -47,13 +47,13 @@ namespace StudentManagementSystem.Forms
 
         private void FormatGridColumns()
         {
-            if (dgvStudents.Columns["StudentID"] != null)  dgvStudents.Columns["StudentID"].Visible  = false;
-            if (dgvStudents.Columns["PersonID"]  != null)  dgvStudents.Columns["PersonID"].Visible   = false;
-            if (dgvStudents.Columns["IsActive"]  != null)  dgvStudents.Columns["IsActive"].Visible   = false;
-            if (dgvStudents.Columns["RegNumber"]      != null) dgvStudents.Columns["RegNumber"].HeaderText      = "Reg No";
-            if (dgvStudents.Columns["FirstName"]      != null) dgvStudents.Columns["FirstName"].HeaderText      = "First Name";
-            if (dgvStudents.Columns["LastName"]       != null) dgvStudents.Columns["LastName"].HeaderText       = "Last Name";
-            if (dgvStudents.Columns["DateOfBirth"]    != null) dgvStudents.Columns["DateOfBirth"].HeaderText    = "DOB";
+            if (dgvStudents.Columns["StudentID"] != null) dgvStudents.Columns["StudentID"].Visible = false;
+            if (dgvStudents.Columns["PersonID"]  != null) dgvStudents.Columns["PersonID"].Visible = false;
+            if (dgvStudents.Columns["IsActive"]  != null) dgvStudents.Columns["IsActive"].Visible = false;
+            if (dgvStudents.Columns["RegNumber"] != null) dgvStudents.Columns["RegNumber"].HeaderText = "Reg No";
+            if (dgvStudents.Columns["FirstName"] != null) dgvStudents.Columns["FirstName"].HeaderText = "First Name";
+            if (dgvStudents.Columns["LastName"]  != null) dgvStudents.Columns["LastName"].HeaderText  = "Last Name";
+            if (dgvStudents.Columns["DateOfBirth"]  != null) dgvStudents.Columns["DateOfBirth"].HeaderText = "DOB";
             if (dgvStudents.Columns["EnrollmentDate"] != null) dgvStudents.Columns["EnrollmentDate"].HeaderText = "Enrolled Date";
         }
 
@@ -206,6 +206,7 @@ namespace StudentManagementSystem.Forms
             }
         }
 
+        
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearInputs();
@@ -226,13 +227,14 @@ namespace StudentManagementSystem.Forms
                     txtPhone.Text           = selectedStudent.Phone;
                     txtAddress.Text         = selectedStudent.Address;
                     dtpDOB.Value            = selectedStudent.DateOfBirth;
-                    // Clear credentials fields — credentials are set on Add only
+                    // Clear credentials fields 
                     txtLoginUsername.Clear();
                     txtLoginPassword.Clear();
                 }
             }
         }
 
+        
         private Student BuildStudentFromInputs()
         {
             return new Student
@@ -247,6 +249,7 @@ namespace StudentManagementSystem.Forms
             };
         }
 
+        
         private void ClearInputs()
         {
             _selectedStudentId = 0;
