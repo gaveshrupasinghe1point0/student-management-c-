@@ -1,4 +1,4 @@
--- CS107.3 Student Management System (LMS)
+
 -- Shared Database Initialization Script for SQL Server / LocalDB
 
 IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'StudentDB')
@@ -10,7 +10,7 @@ GO
 USE StudentDB;
 GO
 
--- 1. Create Courses Table (Member 3 - Course Management Module)
+-- 1. Courses Table ( Course Management Module)
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Courses')
 BEGIN
     CREATE TABLE Courses (
@@ -26,7 +26,7 @@ BEGIN
 END
 GO
 
--- 2. Create Students Table (Member 2 - Student Records Module)
+-- 2.  Students Table ( Student Records Module)
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Students')
 BEGIN
     CREATE TABLE Students (
@@ -44,7 +44,7 @@ BEGIN
 END
 GO
 
--- 3. Create StudentCourses Junction / Enrollment Table (Shared Enrollment Relationship)
+-- 3.  StudentCourses Junction / Enrollment Table (Shared Enrollment Relationship)
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'StudentCourses')
 BEGIN
     CREATE TABLE StudentCourses (
@@ -90,7 +90,7 @@ BEGIN
 END
 GO
 
--- 4. Create Users Table (Member 1 - Auth / Roles Module)
+-- 4.  Users Table (  Auth / Roles Module)
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Users')
 BEGIN
     CREATE TABLE Users (
@@ -118,3 +118,78 @@ BEGIN
     VALUES ('admin', 'admin123', 'System Administrator', 'admin@nsbm.ac.lk', 'ADM/001', 'Admin');
 END
 GO
+
+-- 5. Create Attendance Table (Attendance Module)
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Attendance')
+BEGIN
+    CREATE TABLE Attendance (
+        AttendanceID INT IDENTITY(1,1) PRIMARY KEY,
+        StudentID INT NOT NULL CONSTRAINT FK_Attendance_Students REFERENCES Students(StudentID),
+        CourseID INT NOT NULL CONSTRAINT FK_Attendance_Courses REFERENCES Courses(CourseID),
+        Date DATE NOT NULL,
+        Status VARCHAR(20) NOT NULL CONSTRAINT CHK_Attendance_Status CHECK (Status IN ('Present', 'Absent', 'Late')),
+        CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+    );
+END
+GO
+
+-- Seed Sample Attendance Records
+IF NOT EXISTS (SELECT * FROM Attendance)
+BEGIN
+    INSERT INTO Attendance (StudentID, CourseID, Date, Status)
+    VALUES 
+    (1, 1, CAST(GETDATE() AS DATE), 'Present'),
+    (2, 1, CAST(GETDATE() AS DATE), 'Present'),
+    (1, 2, CAST(GETDATE() AS DATE), 'Late');
+END
+GO
+
+-- 6. Create Grades Table (Grades Module)
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Grades')
+BEGIN
+    CREATE TABLE Grades (
+        GradeID INT IDENTITY(1,1) PRIMARY KEY,
+        StudentID INT NOT NULL CONSTRAINT FK_Grades_Students REFERENCES Students(StudentID),
+        CourseID INT NOT NULL CONSTRAINT FK_Grades_Courses REFERENCES Courses(CourseID),
+        GradeValue VARCHAR(10) NOT NULL,
+        Remarks NVARCHAR(255) NULL,
+        RecordedDate DATETIME NOT NULL DEFAULT GETDATE()
+    );
+END
+GO
+
+-- Seed Sample Grades Records
+IF NOT EXISTS (SELECT * FROM Grades)
+BEGIN
+    INSERT INTO Grades (StudentID, CourseID, GradeValue, Remarks)
+    VALUES 
+    (1, 1, 'A', 'Excellent performance'),
+    (1, 2, 'B+', 'Good effort in assignments'),
+    (2, 1, 'A-', 'Active participation');
+END
+GO
+
+-- 7. Create Fees Table (Fees Module)
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Fees')
+BEGIN
+    CREATE TABLE Fees (
+        FeeID INT IDENTITY(1,1) PRIMARY KEY,
+        StudentID INT NOT NULL CONSTRAINT FK_Fees_Students REFERENCES Students(StudentID),
+        Amount DECIMAL(10,2) NOT NULL,
+        PaymentDate DATE NOT NULL,
+        Status VARCHAR(20) NOT NULL CONSTRAINT CHK_Fees_Status CHECK (Status IN ('Paid', 'Pending', 'Partially Paid', 'Overdue')),
+        CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+    );
+END
+GO
+
+-- Seed Sample Fees Records
+IF NOT EXISTS (SELECT * FROM Fees)
+BEGIN
+    INSERT INTO Fees (StudentID, Amount, PaymentDate, Status)
+    VALUES 
+    (1, 15000.00, CAST(GETDATE() AS DATE), 'Paid'),
+    (2, 12500.00, CAST(GETDATE() AS DATE), 'Pending');
+END
+GO
+

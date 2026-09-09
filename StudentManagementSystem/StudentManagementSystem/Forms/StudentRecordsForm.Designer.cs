@@ -13,57 +13,63 @@ namespace StudentManagementSystem.Forms
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.pnlHeader          = new System.Windows.Forms.Panel();
-            this.lblHeader          = new System.Windows.Forms.Label();
-            this.grpStudentDetails  = new System.Windows.Forms.GroupBox();
-            this.dtpDOB             = new System.Windows.Forms.DateTimePicker();
-            this.lblDOB             = new System.Windows.Forms.Label();
-            this.txtAddress         = new System.Windows.Forms.TextBox();
-            this.lblAddress         = new System.Windows.Forms.Label();
-            this.txtPhone           = new System.Windows.Forms.TextBox();
-            this.lblPhone           = new System.Windows.Forms.Label();
-            this.txtEmail           = new System.Windows.Forms.TextBox();
-            this.lblEmail           = new System.Windows.Forms.Label();
-            this.txtLastName        = new System.Windows.Forms.TextBox();
-            this.lblLastName        = new System.Windows.Forms.Label();
-            this.txtFirstName       = new System.Windows.Forms.TextBox();
-            this.lblFirstName       = new System.Windows.Forms.Label();
-            this.txtRegNumber       = new System.Windows.Forms.TextBox();
-            this.lblRegNumber       = new System.Windows.Forms.Label();
-            this.grpLoginCredentials= new System.Windows.Forms.GroupBox();
-            this.txtLoginPassword   = new System.Windows.Forms.TextBox();
-            this.lblLoginPassword   = new System.Windows.Forms.Label();
-            this.txtLoginUsername   = new System.Windows.Forms.TextBox();
-            this.lblLoginUsername   = new System.Windows.Forms.Label();
-            this.btnAdd             = new System.Windows.Forms.Button();
-            this.btnUpdate          = new System.Windows.Forms.Button();
-            this.btnDelete          = new System.Windows.Forms.Button();
-            this.btnClear           = new System.Windows.Forms.Button();
-            this.dgvStudents        = new System.Windows.Forms.DataGridView();
-            this.lblStudentList     = new System.Windows.Forms.Label();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
+            this.grpStudentDetails = new System.Windows.Forms.GroupBox();
+            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.txtRegNumber = new System.Windows.Forms.TextBox();
+            this.lblRegNumber = new System.Windows.Forms.Label();
+            this.grpLoginCredentials = new System.Windows.Forms.GroupBox();
+            this.txtLoginPassword = new System.Windows.Forms.TextBox();
+            this.lblLoginPassword = new System.Windows.Forms.Label();
+            this.txtLoginUsername = new System.Windows.Forms.TextBox();
+            this.lblLoginUsername = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.dgvStudents = new System.Windows.Forms.DataGridView();
+            this.lblStudentList = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.grpStudentDetails.SuspendLayout();
             this.grpLoginCredentials.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
+            // 
             // pnlHeader
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(52, 73, 94);
+            // 
+            this.pnlHeader.BackColor = System.Drawing.Color.Green;
             this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(964, 65);
             this.pnlHeader.TabIndex = 0;
+            // 
             // lblHeader
+            // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(18, 15);
+            this.lblHeader.Location = new System.Drawing.Point(258, 9);
             this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(443, 41);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Records Management";
-            // grpStudentDetails  — anchored Top+Left, stays fixed on left
-            this.grpStudentDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
+            // 
+            // grpStudentDetails
+            // 
             this.grpStudentDetails.Controls.Add(this.dtpDOB);
             this.grpStudentDetails.Controls.Add(this.lblDOB);
             this.grpStudentDetails.Controls.Add(this.txtAddress);
@@ -85,23 +91,136 @@ namespace StudentManagementSystem.Forms
             this.grpStudentDetails.TabIndex = 1;
             this.grpStudentDetails.TabStop = false;
             this.grpStudentDetails.Text = "Student Personal Info";
-            // Fields inside grpStudentDetails
-            this.lblRegNumber.AutoSize = true; this.lblRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblRegNumber.Location = new System.Drawing.Point(18, 28);  this.lblRegNumber.Name = "lblRegNumber"; this.lblRegNumber.Text = "Reg No:";
-            this.txtRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtRegNumber.Location = new System.Drawing.Point(120, 25);  this.txtRegNumber.Name = "txtRegNumber"; this.txtRegNumber.Size = new System.Drawing.Size(220, 25);
-            this.lblFirstName.AutoSize = true; this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblFirstName.Location = new System.Drawing.Point(18, 68);  this.lblFirstName.Name = "lblFirstName"; this.lblFirstName.Text = "First Name:";
-            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtFirstName.Location = new System.Drawing.Point(120, 65);  this.txtFirstName.Name = "txtFirstName"; this.txtFirstName.Size = new System.Drawing.Size(220, 25);
-            this.lblLastName.AutoSize = true; this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblLastName.Location = new System.Drawing.Point(18, 108); this.lblLastName.Name = "lblLastName"; this.lblLastName.Text = "Last Name:";
-            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtLastName.Location = new System.Drawing.Point(120, 105); this.txtLastName.Name = "txtLastName"; this.txtLastName.Size = new System.Drawing.Size(220, 25);
-            this.lblEmail.AutoSize = true; this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblEmail.Location = new System.Drawing.Point(18, 148); this.lblEmail.Name = "lblEmail"; this.lblEmail.Text = "Email:";
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtEmail.Location = new System.Drawing.Point(120, 145); this.txtEmail.Name = "txtEmail"; this.txtEmail.Size = new System.Drawing.Size(220, 25);
-            this.lblPhone.AutoSize = true; this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblPhone.Location = new System.Drawing.Point(18, 188); this.lblPhone.Name = "lblPhone"; this.lblPhone.Text = "Phone:";
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtPhone.Location = new System.Drawing.Point(120, 185); this.txtPhone.Name = "txtPhone"; this.txtPhone.Size = new System.Drawing.Size(220, 25);
-            this.lblAddress.AutoSize = true; this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblAddress.Location = new System.Drawing.Point(18, 228); this.lblAddress.Name = "lblAddress"; this.lblAddress.Text = "Address:";
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtAddress.Location = new System.Drawing.Point(120, 225); this.txtAddress.Name = "txtAddress"; this.txtAddress.Size = new System.Drawing.Size(220, 25);
-            this.lblDOB.AutoSize = true; this.lblDOB.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblDOB.Location = new System.Drawing.Point(18, 268); this.lblDOB.Name = "lblDOB"; this.lblDOB.Text = "Date of Birth:";
-            this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short; this.dtpDOB.Location = new System.Drawing.Point(120, 265); this.dtpDOB.Name = "dtpDOB"; this.dtpDOB.Size = new System.Drawing.Size(220, 25);
+            // 
+            // dtpDOB
+            // 
+            this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDOB.Location = new System.Drawing.Point(120, 265);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(220, 29);
+            this.dtpDOB.TabIndex = 0;
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblDOB.Location = new System.Drawing.Point(18, 268);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(111, 23);
+            this.lblDOB.TabIndex = 1;
+            this.lblDOB.Text = "Date of Birth:";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtAddress.Location = new System.Drawing.Point(120, 225);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(220, 29);
+            this.txtAddress.TabIndex = 2;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblAddress.Location = new System.Drawing.Point(18, 228);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(74, 23);
+            this.lblAddress.TabIndex = 3;
+            this.lblAddress.Text = "Address:";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtPhone.Location = new System.Drawing.Point(120, 185);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(220, 29);
+            this.txtPhone.TabIndex = 4;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblPhone.Location = new System.Drawing.Point(18, 188);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(63, 23);
+            this.lblPhone.TabIndex = 5;
+            this.lblPhone.Text = "Phone:";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtEmail.Location = new System.Drawing.Point(120, 145);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(220, 29);
+            this.txtEmail.TabIndex = 6;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblEmail.Location = new System.Drawing.Point(18, 148);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(55, 23);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email:";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtLastName.Location = new System.Drawing.Point(120, 105);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(220, 29);
+            this.txtLastName.TabIndex = 8;
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblLastName.Location = new System.Drawing.Point(18, 108);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(95, 23);
+            this.lblLastName.TabIndex = 9;
+            this.lblLastName.Text = "Last Name:";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtFirstName.Location = new System.Drawing.Point(120, 65);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(220, 29);
+            this.txtFirstName.TabIndex = 10;
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblFirstName.Location = new System.Drawing.Point(18, 68);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(96, 23);
+            this.lblFirstName.TabIndex = 11;
+            this.lblFirstName.Text = "First Name:";
+            // 
+            // txtRegNumber
+            // 
+            this.txtRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtRegNumber.Location = new System.Drawing.Point(120, 25);
+            this.txtRegNumber.Name = "txtRegNumber";
+            this.txtRegNumber.Size = new System.Drawing.Size(220, 29);
+            this.txtRegNumber.TabIndex = 12;
+            // 
+            // lblRegNumber
+            // 
+            this.lblRegNumber.AutoSize = true;
+            this.lblRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblRegNumber.Location = new System.Drawing.Point(18, 28);
+            this.lblRegNumber.Name = "lblRegNumber";
+            this.lblRegNumber.Size = new System.Drawing.Size(71, 23);
+            this.lblRegNumber.TabIndex = 13;
+            this.lblRegNumber.Text = "Reg No:";
+            // 
             // grpLoginCredentials
-            this.grpLoginCredentials.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
+            // 
             this.grpLoginCredentials.Controls.Add(this.txtLoginPassword);
             this.grpLoginCredentials.Controls.Add(this.lblLoginPassword);
             this.grpLoginCredentials.Controls.Add(this.txtLoginUsername);
@@ -113,10 +232,43 @@ namespace StudentManagementSystem.Forms
             this.grpLoginCredentials.TabIndex = 9;
             this.grpLoginCredentials.TabStop = false;
             this.grpLoginCredentials.Text = "Login Credentials (set on Add only)";
-            this.lblLoginUsername.AutoSize = true; this.lblLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblLoginUsername.Location = new System.Drawing.Point(18, 30); this.lblLoginUsername.Name = "lblLoginUsername"; this.lblLoginUsername.Text = "Username:";
-            this.txtLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtLoginUsername.Location = new System.Drawing.Point(120, 27); this.txtLoginUsername.Name = "txtLoginUsername"; this.txtLoginUsername.Size = new System.Drawing.Size(220, 25);
-            this.lblLoginPassword.AutoSize = true; this.lblLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.lblLoginPassword.Location = new System.Drawing.Point(18, 65); this.lblLoginPassword.Name = "lblLoginPassword"; this.lblLoginPassword.Text = "Password:";
-            this.txtLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F); this.txtLoginPassword.Location = new System.Drawing.Point(120, 62); this.txtLoginPassword.Name = "txtLoginPassword"; this.txtLoginPassword.PasswordChar = '*'; this.txtLoginPassword.Size = new System.Drawing.Size(220, 25);
+            // 
+            // txtLoginPassword
+            // 
+            this.txtLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtLoginPassword.Location = new System.Drawing.Point(120, 62);
+            this.txtLoginPassword.Name = "txtLoginPassword";
+            this.txtLoginPassword.PasswordChar = '*';
+            this.txtLoginPassword.Size = new System.Drawing.Size(220, 29);
+            this.txtLoginPassword.TabIndex = 0;
+            // 
+            // lblLoginPassword
+            // 
+            this.lblLoginPassword.AutoSize = true;
+            this.lblLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblLoginPassword.Location = new System.Drawing.Point(18, 65);
+            this.lblLoginPassword.Name = "lblLoginPassword";
+            this.lblLoginPassword.Size = new System.Drawing.Size(84, 23);
+            this.lblLoginPassword.TabIndex = 1;
+            this.lblLoginPassword.Text = "Password:";
+            // 
+            // txtLoginUsername
+            // 
+            this.txtLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtLoginUsername.Location = new System.Drawing.Point(120, 27);
+            this.txtLoginUsername.Name = "txtLoginUsername";
+            this.txtLoginUsername.Size = new System.Drawing.Size(220, 29);
+            this.txtLoginUsername.TabIndex = 2;
+            // 
+            // lblLoginUsername
+            // 
+            this.lblLoginUsername.AutoSize = true;
+            this.lblLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblLoginUsername.Location = new System.Drawing.Point(18, 30);
+            this.lblLoginUsername.Name = "lblLoginUsername";
+            this.lblLoginUsername.Size = new System.Drawing.Size(91, 23);
+            this.lblLoginUsername.TabIndex = 3;
+            this.lblLoginUsername.Text = "Username:";
             // 
             // btnAdd
             // 
@@ -177,18 +329,14 @@ namespace StudentManagementSystem.Forms
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // lblStudentList
-            this.lblStudentList.AutoSize = true;
-            this.lblStudentList.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
-            this.lblStudentList.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblStudentList.Location = new System.Drawing.Point(405, 80);
-            this.lblStudentList.Name = "lblStudentList";
-            this.lblStudentList.TabIndex = 8;
-            this.lblStudentList.Text = "Registered Students";
-            // dgvStudents — anchored all sides so it fills and stretches
+            // 
+            // dgvStudents
+            // 
             this.dgvStudents.AllowUserToAddRows = false;
             this.dgvStudents.AllowUserToDeleteRows = false;
-            this.dgvStudents.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.dgvStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStudents.BackgroundColor = System.Drawing.Color.White;
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -196,16 +344,28 @@ namespace StudentManagementSystem.Forms
             this.dgvStudents.MultiSelect = false;
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.ReadOnly = true;
+            this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudents.Size = new System.Drawing.Size(535, 445);
             this.dgvStudents.TabIndex = 7;
             this.dgvStudents.SelectionChanged += new System.EventHandler(this.dgvStudents_SelectionChanged);
+            // 
+            // lblStudentList
+            // 
+            this.lblStudentList.AutoSize = true;
+            this.lblStudentList.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblStudentList.Location = new System.Drawing.Point(405, 80);
+            this.lblStudentList.Name = "lblStudentList";
+            this.lblStudentList.Size = new System.Drawing.Size(190, 25);
+            this.lblStudentList.TabIndex = 8;
+            this.lblStudentList.Text = "Registered Students";
+            // 
             // StudentRecordsForm
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(236, 240, 241);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(964, 570);
-            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.lblStudentList);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.btnClear);
@@ -216,7 +376,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.grpStudentDetails);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "StudentRecordsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Records Management";
@@ -230,6 +390,7 @@ namespace StudentManagementSystem.Forms
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
         #endregion
 
