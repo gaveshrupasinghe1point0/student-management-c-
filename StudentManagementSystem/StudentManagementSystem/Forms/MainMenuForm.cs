@@ -38,7 +38,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnGrades_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Grades module placeholder (Member 5). Wire your form here!", "Member 5 Module", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            new GradesForm().Show();
         }
 
         private void btnFees_Click(object sender, EventArgs e)
