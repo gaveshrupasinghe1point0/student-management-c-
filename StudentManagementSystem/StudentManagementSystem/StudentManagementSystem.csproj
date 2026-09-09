@@ -78,6 +78,12 @@
     <Compile Include="Forms\CourseManagementForm.Designer.cs">
       <DependentUpon>CourseManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FeesForm.Designer.cs">
+      <DependentUpon>FeesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StudentRecordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AttendanceForm.resx">
       <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FeesForm.resx">
+      <DependentUpon>FeesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
