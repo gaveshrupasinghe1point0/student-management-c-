@@ -33,7 +33,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnAttendance_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Attendance module placeholder (Member 4). Wire your form here!", "Member 4 Module", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            new AttendanceForm().Show();
         }
 
         private void btnGrades_Click(object sender, EventArgs e)
