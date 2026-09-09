@@ -43,7 +43,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnFees_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fees module placeholder (Member 6). Wire your form here!", "Member 6 Module", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            new FeesForm().Show();
         }
 
         private void btnTimetable_Click(object sender, EventArgs e)
