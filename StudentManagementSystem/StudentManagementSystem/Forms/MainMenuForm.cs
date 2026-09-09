@@ -53,7 +53,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnReportCard_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Report Card Export module placeholder (Member 8). Wire your form here!", "Member 8 Module", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            new ReportCardForm().Show();
         }
     }
 }
