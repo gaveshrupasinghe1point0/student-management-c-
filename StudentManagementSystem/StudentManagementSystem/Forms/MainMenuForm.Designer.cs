@@ -217,7 +217,7 @@ namespace StudentManagementSystem.Forms
             this.btnReportCard.Name = "btnReportCard";
             this.btnReportCard.Size = new System.Drawing.Size(346, 68);
             this.btnReportCard.TabIndex = 7;
-            this.btnReportCard.Text = "8.  Report Card Export";
+            this.btnReportCard.Text = "8.  Student Report Card";
             this.btnReportCard.UseVisualStyleBackColor = false;
             this.btnReportCard.Click += new System.EventHandler(this.btnReportCard_Click);
             // 

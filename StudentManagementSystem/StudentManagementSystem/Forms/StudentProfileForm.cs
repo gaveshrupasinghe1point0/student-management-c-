@@ -178,6 +178,18 @@ namespace StudentManagementSystem.Forms
             }
         }
 
+        private void btnViewReportCard_Click(object sender, EventArgs e)
+        {
+            if (_currentStudent == null)
+            {
+                MessageBox.Show("Your student record is not yet linked to an active student registration. Please contact the administrator.", "Report Card", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            ReportCardForm reportCard = new ReportCardForm(_currentStudent);
+            reportCard.ShowDialog();
+        }
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

@@ -30,6 +30,7 @@ namespace StudentManagementSystem.Forms
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.btnViewReportCard = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpProfile = new System.Windows.Forms.GroupBox();
@@ -57,6 +58,7 @@ namespace StudentManagementSystem.Forms
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.pnlHeader.Controls.Add(this.lblWelcome);
+            this.pnlHeader.Controls.Add(this.btnViewReportCard);
             this.pnlHeader.Controls.Add(this.btnLogout);
             this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -70,12 +72,29 @@ namespace StudentManagementSystem.Forms
             this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblWelcome.Location = new System.Drawing.Point(530, 25);
+            this.lblWelcome.Location = new System.Drawing.Point(365, 24);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(300, 22);
+            this.lblWelcome.Size = new System.Drawing.Size(295, 22);
             this.lblWelcome.TabIndex = 2;
             this.lblWelcome.Text = "Welcome, Student";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnViewReportCard
+            // 
+            this.btnViewReportCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewReportCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnViewReportCard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewReportCard.FlatAppearance.BorderSize = 0;
+            this.btnViewReportCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewReportCard.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnViewReportCard.ForeColor = System.Drawing.Color.White;
+            this.btnViewReportCard.Location = new System.Drawing.Point(675, 18);
+            this.btnViewReportCard.Name = "btnViewReportCard";
+            this.btnViewReportCard.Size = new System.Drawing.Size(155, 34);
+            this.btnViewReportCard.TabIndex = 3;
+            this.btnViewReportCard.Text = "View Report Card";
+            this.btnViewReportCard.UseVisualStyleBackColor = false;
+            this.btnViewReportCard.Click += new System.EventHandler(this.btnViewReportCard_Click);
             // 
             // btnLogout
             // 
@@ -317,6 +336,7 @@ namespace StudentManagementSystem.Forms
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnViewReportCard;
         private System.Windows.Forms.GroupBox grpProfile;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblNameVal;

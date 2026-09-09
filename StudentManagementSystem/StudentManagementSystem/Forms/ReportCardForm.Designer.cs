@@ -31,8 +31,6 @@ namespace StudentManagementSystem.Forms
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpSearch = new System.Windows.Forms.GroupBox();
-            this.btnExportCsv = new System.Windows.Forms.Button();
-            this.btnExportTxt = new System.Windows.Forms.Button();
             this.lblStudentInfo = new System.Windows.Forms.Label();
             this.txtSearchStudent = new System.Windows.Forms.TextBox();
             this.lblStudent = new System.Windows.Forms.Label();
@@ -60,17 +58,15 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(20, 16);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(355, 32);
+            this.lblHeader.Size = new System.Drawing.Size(250, 32);
             this.lblHeader.TabIndex = 0;
-            this.lblHeader.Text = "Student Report Card & Export";
+            this.lblHeader.Text = "Student Report Card";
             // 
             // grpSearch
             // 
             this.grpSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpSearch.BackColor = System.Drawing.Color.White;
-            this.grpSearch.Controls.Add(this.btnExportCsv);
-            this.grpSearch.Controls.Add(this.btnExportTxt);
             this.grpSearch.Controls.Add(this.lblStudentInfo);
             this.grpSearch.Controls.Add(this.txtSearchStudent);
             this.grpSearch.Controls.Add(this.lblStudent);
@@ -81,41 +77,7 @@ namespace StudentManagementSystem.Forms
             this.grpSearch.Size = new System.Drawing.Size(872, 95);
             this.grpSearch.TabIndex = 1;
             this.grpSearch.TabStop = false;
-            this.grpSearch.Text = "Select Student";
-            // 
-            // btnExportCsv
-            // 
-            this.btnExportCsv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExportCsv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnExportCsv.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExportCsv.FlatAppearance.BorderSize = 0;
-            this.btnExportCsv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportCsv.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnExportCsv.ForeColor = System.Drawing.Color.White;
-            this.btnExportCsv.Location = new System.Drawing.Point(705, 32);
-            this.btnExportCsv.Name = "btnExportCsv";
-            this.btnExportCsv.Size = new System.Drawing.Size(145, 38);
-            this.btnExportCsv.TabIndex = 4;
-            this.btnExportCsv.Text = "Export to CSV";
-            this.btnExportCsv.UseVisualStyleBackColor = false;
-            this.btnExportCsv.Click += new System.EventHandler(this.btnExportCsv_Click);
-            // 
-            // btnExportTxt
-            // 
-            this.btnExportTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExportTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btnExportTxt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExportTxt.FlatAppearance.BorderSize = 0;
-            this.btnExportTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportTxt.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnExportTxt.ForeColor = System.Drawing.Color.White;
-            this.btnExportTxt.Location = new System.Drawing.Point(545, 32);
-            this.btnExportTxt.Name = "btnExportTxt";
-            this.btnExportTxt.Size = new System.Drawing.Size(145, 38);
-            this.btnExportTxt.TabIndex = 3;
-            this.btnExportTxt.Text = "Export to TXT";
-            this.btnExportTxt.UseVisualStyleBackColor = false;
-            this.btnExportTxt.Click += new System.EventHandler(this.btnExportTxt_Click);
+            this.grpSearch.Text = "Search Student";
             // 
             // lblStudentInfo
             // 
@@ -133,7 +95,7 @@ namespace StudentManagementSystem.Forms
             this.txtSearchStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtSearchStudent.Location = new System.Drawing.Point(105, 38);
             this.txtSearchStudent.Name = "txtSearchStudent";
-            this.txtSearchStudent.Size = new System.Drawing.Size(260, 25);
+            this.txtSearchStudent.Size = new System.Drawing.Size(320, 25);
             this.txtSearchStudent.TabIndex = 1;
             this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchStudent_TextChanged);
             // 
@@ -161,7 +123,7 @@ namespace StudentManagementSystem.Forms
             this.grpPreview.Size = new System.Drawing.Size(872, 380);
             this.grpPreview.TabIndex = 2;
             this.grpPreview.TabStop = false;
-            this.grpPreview.Text = "Report Card Live Preview";
+            this.grpPreview.Text = "Report Card Details";
             // 
             // rtbReportPreview
             // 
@@ -188,7 +150,7 @@ namespace StudentManagementSystem.Forms
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Name = "ReportCardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Student Report Card & Export";
+            this.Text = "Student Report Card";
             this.Load += new System.EventHandler(this.ReportCardForm_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -207,8 +169,6 @@ namespace StudentManagementSystem.Forms
         private System.Windows.Forms.Label lblStudent;
         private System.Windows.Forms.TextBox txtSearchStudent;
         private System.Windows.Forms.Label lblStudentInfo;
-        private System.Windows.Forms.Button btnExportTxt;
-        private System.Windows.Forms.Button btnExportCsv;
         private System.Windows.Forms.GroupBox grpPreview;
         private System.Windows.Forms.RichTextBox rtbReportPreview;
     }

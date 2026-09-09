@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -26,10 +25,29 @@ namespace StudentManagementSystem.Forms
             _studentRepository = new StudentRepository();
         }
 
+        public ReportCardForm(Student student) : this()
+        {
+            _selectedStudent = student;
+        }
+
         private void ReportCardForm_Load(object sender, EventArgs e)
         {
-            LoadStudentSearchData();
-            rtbReportPreview.Text = "Please search and select a student ID to preview and export the report card.";
+            if (_selectedStudent != null)
+            {
+                // Student POV: locked to logged-in student, hide search panel entirely
+                grpSearch.Visible = false;
+                this.Text = "My Academic Report Card";
+                lblHeader.Text = "My Academic Report Card";
+                grpPreview.Top = grpSearch.Top;
+                grpPreview.Height = this.ClientSize.Height - grpPreview.Top - 20;
+                GenerateReportCard();
+            }
+            else
+            {
+                // Admin POV: enable search by Student ID
+                LoadStudentSearchData();
+                rtbReportPreview.Text = "Please enter or select a Student ID above to view the report card.";
+            }
         }
 
         private void LoadStudentSearchData()
@@ -68,7 +86,7 @@ namespace StudentManagementSystem.Forms
                 _selectedStudent = null;
                 lblStudentInfo.Text = "Enter Student ID...";
                 lblStudentInfo.ForeColor = Color.DimGray;
-                rtbReportPreview.Text = "Please search and select a student ID to preview and export the report card.";
+                rtbReportPreview.Text = "Please enter or select a Student ID above to view the report card.";
                 return;
             }
 
@@ -258,96 +276,6 @@ namespace StudentManagementSystem.Forms
             sb.AppendLine("=========================================================================================");
 
             rtbReportPreview.Text = sb.ToString();
-        }
-
-        private void btnExportTxt_Click(object sender, EventArgs e)
-        {
-            if (_selectedStudent == null)
-            {
-                MessageBox.Show("Please select a valid student first.", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            using (SaveFileDialog sfd = new SaveFileDialog())
-            {
-                sfd.Filter = "Text File (*.txt)|*.txt";
-                sfd.FileName = $"ReportCard_{_selectedStudent.RegNumber.Replace('/', '_')}_{DateTime.Now:yyyyMMdd}.txt";
-
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        File.WriteAllText(sfd.FileName, rtbReportPreview.Text, Encoding.UTF8);
-                        MessageBox.Show($"Report Card exported successfully to:\n{sfd.FileName}", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Failed to export report card: {ex.Message}", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
-
-        private void btnExportCsv_Click(object sender, EventArgs e)
-        {
-            if (_selectedStudent == null)
-            {
-                MessageBox.Show("Please select a valid student first.", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            using (SaveFileDialog sfd = new SaveFileDialog())
-            {
-                sfd.Filter = "CSV File (*.csv)|*.csv";
-                sfd.FileName = $"ReportCard_{_selectedStudent.RegNumber.Replace('/', '_')}_{DateTime.Now:yyyyMMdd}.csv";
-
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        StringBuilder csv = new StringBuilder();
-                        csv.AppendLine("SECTION,STUDENT_ID,STUDENT_NAME,COURSE_CODE,COURSE_NAME,VALUE_OR_GRADE,EXTRA_INFO,RECORDED_DATE");
-
-                        // Enrolled courses
-                        if (_coursesTable != null)
-                        {
-                            foreach (DataRow row in _coursesTable.Rows)
-                            {
-                                csv.AppendLine($"Enrollment,\"{_selectedStudent.RegNumber}\",\"{_selectedStudent.FirstName} {_selectedStudent.LastName}\",\"{row["CourseCode"]}\",\"{row["CourseName"]}\",\"{row["Credits"]} Credits\",\"{row["Status"]}\",\"{DateTime.Now:yyyy-MM-dd}\"");
-                            }
-                        }
-
-                        // Grades
-                        if (_gradesTable != null)
-                        {
-                            foreach (DataRow row in _gradesTable.Rows)
-                            {
-                                csv.AppendLine($"Grade,\"{_selectedStudent.RegNumber}\",\"{_selectedStudent.FirstName} {_selectedStudent.LastName}\",\"{row["CourseCode"]}\",\"{row["CourseName"]}\",\"{row["GradeValue"]}\",\"{row["Remarks"]}\",\"{Convert.ToDateTime(row["RecordedDate"]):yyyy-MM-dd}\"");
-                            }
-                        }
-
-                        // Attendance
-                        if (_attendanceTable != null)
-                        {
-                            foreach (DataRow row in _attendanceTable.Rows)
-                            {
-                                int total = Convert.ToInt32(row["TotalSessions"]);
-                                int present = Convert.ToInt32(row["PresentCount"]);
-                                int late = Convert.ToInt32(row["LateCount"]);
-                                double pct = total > 0 ? ((double)(present + late) / total) * 100.0 : 0.0;
-                                csv.AppendLine($"Attendance,\"{_selectedStudent.RegNumber}\",\"{_selectedStudent.FirstName} {_selectedStudent.LastName}\",\"{row["CourseCode"]}\",\"Summary\",\"{pct:F1}%\",\"Sessions:{total}|Present:{present}|Late:{late}\",\"{DateTime.Now:yyyy-MM-dd}\"");
-                            }
-                        }
-
-                        File.WriteAllText(sfd.FileName, csv.ToString(), Encoding.UTF8);
-                        MessageBox.Show($"CSV exported successfully to:\n{sfd.FileName}", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Failed to export CSV: {ex.Message}", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
         }
     }
 }
