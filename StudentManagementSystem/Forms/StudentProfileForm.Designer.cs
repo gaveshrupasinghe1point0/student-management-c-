@@ -57,7 +57,11 @@ namespace StudentManagementSystem.Forms
             // 
             // pnlHeader
             // 
+<<<<<<< HEAD
             this.pnlHeader.BackColor = System.Drawing.Color.ForestGreen;
+=======
+            this.pnlHeader.BackColor = System.Drawing.Color.Green;
+>>>>>>> d487993cc5962618d6df04ad9f3ac2af2388e9de
             this.pnlHeader.Controls.Add(this.lblWelcome);
             this.pnlHeader.Controls.Add(this.btnViewReportCard);
             this.pnlHeader.Controls.Add(this.btnLogout);
@@ -121,7 +125,11 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(34, 13);
             this.lblHeader.Name = "lblHeader";
+<<<<<<< HEAD
             this.lblHeader.Size = new System.Drawing.Size(342, 45);
+=======
+            this.lblHeader.Size = new System.Drawing.Size(261, 32);
+>>>>>>> d487993cc5962618d6df04ad9f3ac2af2388e9de
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Portal Profile";
             // 
@@ -154,7 +162,7 @@ namespace StudentManagementSystem.Forms
             this.lblPhoneVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblPhoneVal.Location = new System.Drawing.Point(620, 60);
             this.lblPhoneVal.Name = "lblPhoneVal";
-            this.lblPhoneVal.Size = new System.Drawing.Size(17, 23);
+            this.lblPhoneVal.Size = new System.Drawing.Size(13, 17);
             this.lblPhoneVal.TabIndex = 7;
             this.lblPhoneVal.Text = "-";
             // 
@@ -165,7 +173,7 @@ namespace StudentManagementSystem.Forms
             this.lblPhone.ForeColor = System.Drawing.Color.Gray;
             this.lblPhone.Location = new System.Drawing.Point(530, 60);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(63, 23);
+            this.lblPhone.Size = new System.Drawing.Size(50, 17);
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone:";
             // 
@@ -176,7 +184,7 @@ namespace StudentManagementSystem.Forms
             this.lblEmailVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblEmailVal.Location = new System.Drawing.Point(620, 30);
             this.lblEmailVal.Name = "lblEmailVal";
-            this.lblEmailVal.Size = new System.Drawing.Size(17, 23);
+            this.lblEmailVal.Size = new System.Drawing.Size(13, 17);
             this.lblEmailVal.TabIndex = 5;
             this.lblEmailVal.Text = "-";
             // 
@@ -187,7 +195,7 @@ namespace StudentManagementSystem.Forms
             this.lblEmail.ForeColor = System.Drawing.Color.Gray;
             this.lblEmail.Location = new System.Drawing.Point(530, 30);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(55, 23);
+            this.lblEmail.Size = new System.Drawing.Size(43, 17);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Email:";
             // 
@@ -198,7 +206,7 @@ namespace StudentManagementSystem.Forms
             this.lblRegNoVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblRegNoVal.Location = new System.Drawing.Point(145, 60);
             this.lblRegNoVal.Name = "lblRegNoVal";
-            this.lblRegNoVal.Size = new System.Drawing.Size(17, 23);
+            this.lblRegNoVal.Size = new System.Drawing.Size(13, 17);
             this.lblRegNoVal.TabIndex = 3;
             this.lblRegNoVal.Text = "-";
             // 
@@ -209,7 +217,7 @@ namespace StudentManagementSystem.Forms
             this.lblRegNo.ForeColor = System.Drawing.Color.Gray;
             this.lblRegNo.Location = new System.Drawing.Point(30, 60);
             this.lblRegNo.Name = "lblRegNo";
-            this.lblRegNo.Size = new System.Drawing.Size(96, 23);
+            this.lblRegNo.Size = new System.Drawing.Size(76, 17);
             this.lblRegNo.TabIndex = 2;
             this.lblRegNo.Text = "Student ID:";
             // 
@@ -220,7 +228,7 @@ namespace StudentManagementSystem.Forms
             this.lblNameVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblNameVal.Location = new System.Drawing.Point(145, 30);
             this.lblNameVal.Name = "lblNameVal";
-            this.lblNameVal.Size = new System.Drawing.Size(17, 23);
+            this.lblNameVal.Size = new System.Drawing.Size(13, 17);
             this.lblNameVal.TabIndex = 1;
             this.lblNameVal.Text = "-";
             // 
@@ -231,7 +239,7 @@ namespace StudentManagementSystem.Forms
             this.lblName.ForeColor = System.Drawing.Color.Gray;
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(92, 23);
+            this.lblName.Size = new System.Drawing.Size(72, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Full Name:";
             // 
@@ -308,7 +316,7 @@ namespace StudentManagementSystem.Forms
             // 
             // StudentProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.BackgroundImage = global::StudentManagementSystem.Properties.Resources.image1;

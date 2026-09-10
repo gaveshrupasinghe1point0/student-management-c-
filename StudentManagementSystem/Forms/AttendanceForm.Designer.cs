@@ -52,12 +52,13 @@ namespace StudentManagementSystem.Forms
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.pnlHeader.BackColor = System.Drawing.Color.Green;
             this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(904, 65);
+            this.pnlHeader.Size = new System.Drawing.Size(678, 53);
             this.pnlHeader.TabIndex = 0;
             // 
             // lblHeader
@@ -65,9 +66,10 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(228, 9);
+            this.lblHeader.Location = new System.Drawing.Point(171, 7);
+            this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(415, 41);
+            this.lblHeader.Size = new System.Drawing.Size(335, 32);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Attendance Module";
             // 
@@ -87,9 +89,11 @@ namespace StudentManagementSystem.Forms
             this.grpAttendance.Controls.Add(this.txtSearchStudent);
             this.grpAttendance.Controls.Add(this.lblStudent);
             this.grpAttendance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.grpAttendance.Location = new System.Drawing.Point(24, 80);
+            this.grpAttendance.Location = new System.Drawing.Point(18, 65);
+            this.grpAttendance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpAttendance.Name = "grpAttendance";
-            this.grpAttendance.Size = new System.Drawing.Size(855, 140);
+            this.grpAttendance.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpAttendance.Size = new System.Drawing.Size(641, 114);
             this.grpAttendance.TabIndex = 1;
             this.grpAttendance.TabStop = false;
             this.grpAttendance.Text = "Record Attendance";
@@ -101,9 +105,10 @@ namespace StudentManagementSystem.Forms
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(710, 52);
+            this.btnClear.Location = new System.Drawing.Point(532, 42);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(110, 42);
+            this.btnClear.Size = new System.Drawing.Size(82, 34);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -116,9 +121,10 @@ namespace StudentManagementSystem.Forms
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(565, 52);
+            this.btnSave.Location = new System.Drawing.Point(424, 42);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(130, 42);
+            this.btnSave.Size = new System.Drawing.Size(98, 34);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save Record";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -133,18 +139,20 @@ namespace StudentManagementSystem.Forms
             "Present",
             "Absent",
             "Late"});
-            this.cmbStatus.Location = new System.Drawing.Point(345, 102);
+            this.cmbStatus.Location = new System.Drawing.Point(259, 83);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(140, 29);
+            this.cmbStatus.Size = new System.Drawing.Size(106, 25);
             this.cmbStatus.TabIndex = 7;
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblStatus.Location = new System.Drawing.Point(285, 105);
+            this.lblStatus.Location = new System.Drawing.Point(214, 85);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(60, 23);
+            this.lblStatus.Size = new System.Drawing.Size(46, 17);
             this.lblStatus.TabIndex = 6;
             this.lblStatus.Text = "Status:";
             // 
@@ -152,18 +160,20 @@ namespace StudentManagementSystem.Forms
             // 
             this.dtpDate.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(70, 102);
+            this.dtpDate.Location = new System.Drawing.Point(52, 83);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(190, 29);
+            this.dtpDate.Size = new System.Drawing.Size(144, 25);
             this.dtpDate.TabIndex = 5;
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblDate.Location = new System.Drawing.Point(20, 105);
+            this.lblDate.Location = new System.Drawing.Point(15, 85);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(50, 23);
+            this.lblDate.Size = new System.Drawing.Size(38, 17);
             this.lblDate.TabIndex = 4;
             this.lblDate.Text = "Date:";
             // 
@@ -172,18 +182,20 @@ namespace StudentManagementSystem.Forms
             this.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCourse.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.cmbCourse.FormattingEnabled = true;
-            this.cmbCourse.Location = new System.Drawing.Point(285, 48);
+            this.cmbCourse.Location = new System.Drawing.Point(214, 39);
+            this.cmbCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCourse.Name = "cmbCourse";
-            this.cmbCourse.Size = new System.Drawing.Size(200, 29);
+            this.cmbCourse.Size = new System.Drawing.Size(151, 25);
             this.cmbCourse.TabIndex = 3;
             // 
             // lblCourse
             // 
             this.lblCourse.AutoSize = true;
             this.lblCourse.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblCourse.Location = new System.Drawing.Point(285, 25);
+            this.lblCourse.Location = new System.Drawing.Point(214, 20);
+            this.lblCourse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourse.Name = "lblCourse";
-            this.lblCourse.Size = new System.Drawing.Size(117, 23);
+            this.lblCourse.Size = new System.Drawing.Size(90, 17);
             this.lblCourse.TabIndex = 2;
             this.lblCourse.Text = "Select Course:";
             // 
@@ -192,18 +204,20 @@ namespace StudentManagementSystem.Forms
             this.lblStudentInfo.AutoSize = true;
             this.lblStudentInfo.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.lblStudentInfo.ForeColor = System.Drawing.Color.DimGray;
-            this.lblStudentInfo.Location = new System.Drawing.Point(18, 78);
+            this.lblStudentInfo.Location = new System.Drawing.Point(14, 63);
+            this.lblStudentInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStudentInfo.Name = "lblStudentInfo";
-            this.lblStudentInfo.Size = new System.Drawing.Size(126, 20);
+            this.lblStudentInfo.Size = new System.Drawing.Size(101, 15);
             this.lblStudentInfo.TabIndex = 1;
             this.lblStudentInfo.Text = "Enter Student ID...";
             // 
             // txtSearchStudent
             // 
             this.txtSearchStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtSearchStudent.Location = new System.Drawing.Point(20, 48);
+            this.txtSearchStudent.Location = new System.Drawing.Point(15, 39);
+            this.txtSearchStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearchStudent.Name = "txtSearchStudent";
-            this.txtSearchStudent.Size = new System.Drawing.Size(240, 29);
+            this.txtSearchStudent.Size = new System.Drawing.Size(181, 25);
             this.txtSearchStudent.TabIndex = 0;
             this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchStudent_TextChanged);
             // 
@@ -211,9 +225,10 @@ namespace StudentManagementSystem.Forms
             // 
             this.lblStudent.AutoSize = true;
             this.lblStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblStudent.Location = new System.Drawing.Point(18, 25);
+            this.lblStudent.Location = new System.Drawing.Point(14, 20);
+            this.lblStudent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStudent.Name = "lblStudent";
-            this.lblStudent.Size = new System.Drawing.Size(95, 23);
+            this.lblStudent.Size = new System.Drawing.Size(71, 17);
             this.lblStudent.TabIndex = 0;
             this.lblStudent.Text = "Student ID:";
             // 
@@ -221,9 +236,10 @@ namespace StudentManagementSystem.Forms
             // 
             this.lblGridTitle.AutoSize = true;
             this.lblGridTitle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblGridTitle.Location = new System.Drawing.Point(24, 235);
+            this.lblGridTitle.Location = new System.Drawing.Point(18, 191);
+            this.lblGridTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGridTitle.Name = "lblGridTitle";
-            this.lblGridTitle.Size = new System.Drawing.Size(190, 25);
+            this.lblGridTitle.Size = new System.Drawing.Size(150, 20);
             this.lblGridTitle.TabIndex = 2;
             this.lblGridTitle.Text = "Attendance Records";
             // 
@@ -237,25 +253,27 @@ namespace StudentManagementSystem.Forms
             this.dgvAttendance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAttendance.BackgroundColor = System.Drawing.Color.White;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendance.Location = new System.Drawing.Point(24, 265);
+            this.dgvAttendance.Location = new System.Drawing.Point(18, 215);
+            this.dgvAttendance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.ReadOnly = true;
             this.dgvAttendance.RowHeadersWidth = 51;
             this.dgvAttendance.RowTemplate.Height = 24;
             this.dgvAttendance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAttendance.Size = new System.Drawing.Size(855, 310);
+            this.dgvAttendance.Size = new System.Drawing.Size(641, 252);
             this.dgvAttendance.TabIndex = 3;
             // 
             // AttendanceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 600);
+            this.ClientSize = new System.Drawing.Size(678, 488);
             this.Controls.Add(this.dgvAttendance);
             this.Controls.Add(this.lblGridTitle);
             this.Controls.Add(this.grpAttendance);
             this.Controls.Add(this.pnlHeader);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AttendanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Attendance Management";

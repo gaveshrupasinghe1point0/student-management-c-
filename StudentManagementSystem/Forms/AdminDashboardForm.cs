@@ -28,35 +28,24 @@ namespace StudentManagementSystem.Forms
             lblTitle.Left = Math.Max(20, (pnlHeader.Width - lblTitle.Width) / 2);
             lblTitle.Top = Math.Max(10, (pnlHeader.Height - lblTitle.Height) / 2);
 
-            int topOffset = pnlHeader.Height + 20;
-            int availableWidth = this.ClientSize.Width;
-            int availableHeight = this.ClientSize.Height - topOffset - 20;
+            int padX = 30;   // left + right padding so buttons never touch the edges
+            int padY = 20;   // top gap below header & bottom padding
+            int topOffset = pnlHeader.Height + padY;
+            int availableWidth  = this.ClientSize.Width - (2 * padX);
+            int availableHeight = this.ClientSize.Height - topOffset - padY;
 
-            int gapX = 20;
-            int gapY = 14;
+            int gapX = 20;   // horizontal gap between the two columns
+            int gapY = 14;   // vertical gap between rows
 
-            // Compute button size – if maximized, use full client area; otherwise keep minimum caps
-            int btnWidth, btnHeight;
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                // Fill width equally across two columns
-                btnWidth = (availableWidth - gapX) / 2;
-                // Fill height equally across four rows
-                btnHeight = (availableHeight - (3 * gapY)) / 4;
-            }
-            else
-            {
-                // Minimum sensible size, no upper caps
-                btnWidth = Math.Max(200, (availableWidth - gapX) / 2);
-                btnHeight = Math.Max(45, (availableHeight - (3 * gapY)) / 4);
-            }
+            // Equal button width for 2 columns, equal height for 4 rows
+            int btnWidth  = Math.Max(200, (availableWidth - gapX) / 2);
+            int btnHeight = Math.Max(45,  (availableHeight - (3 * gapY)) / 4);
 
-            // Center the 2 columns in the available space
-            int totalGridWidth = (btnWidth * 2) + gapX;
-            int startX = (availableWidth - totalGridWidth) / 2;
-            if (startX < 20) startX = 20;
-
+            // Center the grid inside the padded area
+            int totalGridWidth  = (btnWidth * 2) + gapX;
             int totalGridHeight = (btnHeight * 4) + (gapY * 3);
+
+            int startX = padX + (availableWidth - totalGridWidth) / 2;
             int startY = topOffset + (availableHeight - totalGridHeight) / 2;
             if (startY < topOffset) startY = topOffset;
 
