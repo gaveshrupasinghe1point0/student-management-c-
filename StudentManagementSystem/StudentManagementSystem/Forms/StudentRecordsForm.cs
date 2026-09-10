@@ -115,7 +115,7 @@ namespace StudentManagementSystem.Forms
             catch (ValidationException valEx)
             {
                 MessageBox.Show(valEx.Message, 
-                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                     "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (DatabaseException dbEx)
             {
