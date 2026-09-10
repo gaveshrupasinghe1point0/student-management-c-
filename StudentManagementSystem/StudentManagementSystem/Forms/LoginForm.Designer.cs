@@ -33,17 +33,17 @@ namespace StudentManagementSystem.Forms
             this.lblUsername.BackColor = System.Drawing.Color.White;
             this.lblUsername.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(111, 169);
+            this.lblUsername.Location = new System.Drawing.Point(120, 169);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(207, 40);
+            this.lblUsername.Size = new System.Drawing.Size(202, 38);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username:";
             // 
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(358, 169);
+            this.txtUsername.Location = new System.Drawing.Point(433, 169);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(340, 34);
@@ -54,17 +54,17 @@ namespace StudentManagementSystem.Forms
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.White;
             this.lblPassword.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(120, 232);
+            this.lblPassword.Location = new System.Drawing.Point(129, 232);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(198, 40);
+            this.lblPassword.Size = new System.Drawing.Size(193, 38);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password:";
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(358, 232);
+            this.txtPassword.Location = new System.Drawing.Point(433, 232);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -74,11 +74,11 @@ namespace StudentManagementSystem.Forms
             // btnLogin
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(329, 323);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(315, 300);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(195, 72);
+            this.btnLogin.Size = new System.Drawing.Size(220, 56);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = true;

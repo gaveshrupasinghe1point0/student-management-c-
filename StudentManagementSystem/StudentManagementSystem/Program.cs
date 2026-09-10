@@ -1,5 +1,6 @@
 using StudentManagementSystem.Forms;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace StudentManagementSystem
@@ -12,6 +13,19 @@ namespace StudentManagementSystem
         [STAThread]
         static void Main()
         {
+            // Point |DataDirectory| to the project root directory when running inside bin\Debug
+            // so database changes persist to StudentDB.mdf directly in the project folder.
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string projectDir = Path.GetFullPath(Path.Combine(baseDir, @"..\..\"));
+            if (File.Exists(Path.Combine(projectDir, "StudentDB.mdf")))
+            {
+                AppDomain.CurrentDomain.SetData("DataDirectory", projectDir);
+            }
+            else
+            {
+                AppDomain.CurrentDomain.SetData("DataDirectory", baseDir);
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -20,7 +34,7 @@ namespace StudentManagementSystem
             {
                 if (login.ShowDialog() == DialogResult.OK)
                 {
-                    Application.Run(new MainMenuForm());
+                    Application.Run(new AdminDashboardForm());
                 }
             }
         }

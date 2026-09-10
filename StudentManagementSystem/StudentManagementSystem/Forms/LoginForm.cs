@@ -41,12 +41,11 @@ namespace StudentManagementSystem.Forms
                 }
                 else
                 {
-                    // Student account — no access to admin panel
-                    MessageBox.Show(
-                        $"Welcome, {user.FullName}!\n\nStudent accounts do not have access to the admin panel.",
-                        "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtPassword.Clear();
-                    txtPassword.Focus();
+                    // Student account → open Student Profile Form
+                    this.Hide();
+                    StudentProfileForm profileForm = new StudentProfileForm(user);
+                    profileForm.ShowDialog();
+                    this.Close();
                 }
             }
             catch (AuthenticationException authEx)
