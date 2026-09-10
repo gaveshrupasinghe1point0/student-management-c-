@@ -101,10 +101,10 @@ namespace StudentManagementSystem.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.nsbmlogo;
-            this.pictureBox1.Location = new System.Drawing.Point(342, 10);
+            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.nsbmlogo__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(315, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
