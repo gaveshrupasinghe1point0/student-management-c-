@@ -12,10 +12,13 @@ namespace StudentManagementSystem.Core.Data
         public List<Student> GetAllStudents()
         {
             var students = new List<Student>();
-            string query = @"SELECT StudentID, RegNumber, FirstName, LastName, Email, Phone, Address, DateOfBirth, EnrollmentDate, IsActive 
-                             FROM Students 
-                             WHERE IsActive = 1 
-                             ORDER BY RegNumber ASC";
+            string query = @"SELECT s.StudentID, s.RegNumber, s.FirstName, s.LastName, s.Email, s.Phone, s.Address, 
+                                    s.DateOfBirth, s.EnrollmentDate, s.IsActive,
+                                    u.Username, u.PasswordHash AS [Password]
+                             FROM Students s
+                             LEFT JOIN Users u ON s.RegNumber = u.IdNumber AND u.IsActive = 1
+                             WHERE s.IsActive = 1 
+                             ORDER BY s.RegNumber ASC";
 
             try
             {
@@ -34,9 +37,12 @@ namespace StudentManagementSystem.Core.Data
 
         public Student GetStudentById(int studentId)
         {
-            string query = @"SELECT StudentID, RegNumber, FirstName, LastName, Email, Phone, Address, DateOfBirth, EnrollmentDate, IsActive 
-                             FROM Students 
-                             WHERE StudentID = @StudentID AND IsActive = 1";
+            string query = @"SELECT s.StudentID, s.RegNumber, s.FirstName, s.LastName, s.Email, s.Phone, s.Address, 
+                                    s.DateOfBirth, s.EnrollmentDate, s.IsActive,
+                                    u.Username, u.PasswordHash AS [Password]
+                             FROM Students s
+                             LEFT JOIN Users u ON s.RegNumber = u.IdNumber AND u.IsActive = 1
+                             WHERE s.StudentID = @StudentID AND s.IsActive = 1";
 
             SqlParameter[] parameters = {
                 new SqlParameter("@StudentID", studentId)
@@ -188,7 +194,9 @@ namespace StudentManagementSystem.Core.Data
                 Address = row["Address"] != DBNull.Value ? row["Address"].ToString() : string.Empty,
                 DateOfBirth = Convert.ToDateTime(row["DateOfBirth"]),
                 EnrollmentDate = Convert.ToDateTime(row["EnrollmentDate"]),
-                IsActive = Convert.ToBoolean(row["IsActive"])
+                IsActive = Convert.ToBoolean(row["IsActive"]),
+                Username = row.Table.Columns.Contains("Username") && row["Username"] != DBNull.Value ? row["Username"].ToString() : string.Empty,
+                Password = row.Table.Columns.Contains("Password") && row["Password"] != DBNull.Value ? row["Password"].ToString() : string.Empty
             };
         }
     }

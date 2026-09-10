@@ -10,6 +10,8 @@ namespace StudentManagementSystem.Core.Models
         public DateTime DateOfBirth { get; set; } = DateTime.Now.AddYears(-20);
         public DateTime EnrollmentDate { get; set; } = DateTime.Now;
         public bool IsActive { get; set; } = true;
+        public string Username { get; set; }
+        public string Password { get; set; }
 
         public Student() { }
 

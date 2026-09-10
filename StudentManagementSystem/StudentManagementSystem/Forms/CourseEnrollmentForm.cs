@@ -4,6 +4,7 @@ using StudentManagementSystem.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace StudentManagementSystem.Forms
@@ -13,6 +14,8 @@ namespace StudentManagementSystem.Forms
         private readonly EnrollmentRepository _enrollmentRepository;
         private readonly StudentRepository _studentRepository;
         private readonly CourseRepository _courseRepository;
+        private List<Student> _allStudents = new List<Student>();
+        private Student _selectedStudent = null;
 
         public CourseEnrollmentForm()
         {
@@ -32,11 +35,17 @@ namespace StudentManagementSystem.Forms
         {
             try
             {
-                var students = _studentRepository.GetAllStudents();
-                cmbStudents.DataSource = null;
-                cmbStudents.DataSource = students;
-                cmbStudents.DisplayMember = "FullName";
-                cmbStudents.ValueMember = "StudentID";
+                _allStudents = _studentRepository.GetAllStudents();
+
+                var autoSource = new AutoCompleteStringCollection();
+                foreach (var s in _allStudents)
+                {
+                    autoSource.Add(s.RegNumber);
+                    autoSource.Add(s.StudentID.ToString());
+                }
+                txtSearchStudent.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                txtSearchStudent.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                txtSearchStudent.AutoCompleteCustomSource = autoSource;
 
                 var courses = _courseRepository.GetAllCourses();
                 cmbCourses.DataSource = null;
@@ -46,7 +55,46 @@ namespace StudentManagementSystem.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to load dropdown items: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to load data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSearchStudent_TextChanged(object sender, EventArgs e)
+        {
+            ResolveSelectedStudent();
+        }
+
+        private void ResolveSelectedStudent()
+        {
+            string input = txtSearchStudent.Text.Trim();
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                _selectedStudent = null;
+                lblStudentInfo.Text = "Enter Student ID...";
+                lblStudentInfo.ForeColor = Color.DimGray;
+                return;
+            }
+
+            var match = _allStudents.Find(s =>
+                s.RegNumber.Equals(input, StringComparison.OrdinalIgnoreCase) ||
+                s.StudentID.ToString().Equals(input, StringComparison.OrdinalIgnoreCase));
+
+            if (match == null)
+            {
+                match = _allStudents.Find(s => s.RegNumber.StartsWith(input, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (match != null)
+            {
+                _selectedStudent = match;
+                lblStudentInfo.Text = $"✓ Student ID: {match.RegNumber}";
+                lblStudentInfo.ForeColor = Color.DarkGreen;
+            }
+            else
+            {
+                _selectedStudent = null;
+                lblStudentInfo.Text = "Invalid Student ID.";
+                lblStudentInfo.ForeColor = Color.Crimson;
             }
         }
 
@@ -100,13 +148,20 @@ namespace StudentManagementSystem.Forms
 
         private void btnEnroll_Click(object sender, EventArgs e)
         {
-            if (cmbStudents.SelectedValue == null || cmbCourses.SelectedValue == null)
+            if (_selectedStudent == null)
             {
-                MessageBox.Show("Please select both a student and a course.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid Student ID.", "Student Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSearchStudent.Focus();
                 return;
             }
 
-            int studentId = Convert.ToInt32(cmbStudents.SelectedValue);
+            if (cmbCourses.SelectedValue == null)
+            {
+                MessageBox.Show("Please select a course.", "Course Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int studentId = _selectedStudent.StudentID;
             int courseId = Convert.ToInt32(cmbCourses.SelectedValue);
 
             try
@@ -114,6 +169,11 @@ namespace StudentManagementSystem.Forms
                 _enrollmentRepository.EnrollStudent(studentId, courseId);
 
                 MessageBox.Show("Student successfully enrolled in course!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtSearchStudent.Clear();
+                _selectedStudent = null;
+                lblStudentInfo.Text = "Enter Student ID...";
+                lblStudentInfo.ForeColor = Color.DimGray;
 
                 LoadEnrollments();
             }
