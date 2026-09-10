@@ -57,11 +57,7 @@ namespace StudentManagementSystem.Forms
             // 
             // pnlHeader
             // 
-<<<<<<< HEAD
-            this.pnlHeader.BackColor = System.Drawing.Color.ForestGreen;
-=======
             this.pnlHeader.BackColor = System.Drawing.Color.Green;
->>>>>>> d487993cc5962618d6df04ad9f3ac2af2388e9de
             this.pnlHeader.Controls.Add(this.lblWelcome);
             this.pnlHeader.Controls.Add(this.btnViewReportCard);
             this.pnlHeader.Controls.Add(this.btnLogout);
@@ -125,11 +121,7 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(34, 13);
             this.lblHeader.Name = "lblHeader";
-<<<<<<< HEAD
             this.lblHeader.Size = new System.Drawing.Size(342, 45);
-=======
-            this.lblHeader.Size = new System.Drawing.Size(261, 32);
->>>>>>> d487993cc5962618d6df04ad9f3ac2af2388e9de
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Portal Profile";
             // 
