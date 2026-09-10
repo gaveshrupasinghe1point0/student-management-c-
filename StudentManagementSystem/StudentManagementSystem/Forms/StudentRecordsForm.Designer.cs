@@ -13,6 +13,7 @@ namespace StudentManagementSystem.Forms
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentRecordsForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
@@ -42,6 +43,9 @@ namespace StudentManagementSystem.Forms
             this.btnClear = new System.Windows.Forms.Button();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.lblStudentList = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pnlHeader.SuspendLayout();
             this.grpStudentDetails.SuspendLayout();
             this.grpLoginCredentials.SuspendLayout();
@@ -65,7 +69,7 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(258, 9);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(443, 41);
+            this.lblHeader.Size = new System.Drawing.Size(358, 32);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Records Management";
             // 
@@ -99,7 +103,7 @@ namespace StudentManagementSystem.Forms
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(120, 265);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(220, 29);
+            this.dtpDOB.Size = new System.Drawing.Size(220, 25);
             this.dtpDOB.TabIndex = 0;
             // 
             // lblDOB
@@ -108,7 +112,7 @@ namespace StudentManagementSystem.Forms
             this.lblDOB.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblDOB.Location = new System.Drawing.Point(18, 268);
             this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(111, 23);
+            this.lblDOB.Size = new System.Drawing.Size(84, 17);
             this.lblDOB.TabIndex = 1;
             this.lblDOB.Text = "Date of Birth:";
             // 
@@ -117,7 +121,7 @@ namespace StudentManagementSystem.Forms
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtAddress.Location = new System.Drawing.Point(120, 225);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(220, 29);
+            this.txtAddress.Size = new System.Drawing.Size(220, 25);
             this.txtAddress.TabIndex = 2;
             // 
             // lblAddress
@@ -126,7 +130,7 @@ namespace StudentManagementSystem.Forms
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblAddress.Location = new System.Drawing.Point(18, 228);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(74, 23);
+            this.lblAddress.Size = new System.Drawing.Size(59, 17);
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "Address:";
             // 
@@ -135,7 +139,7 @@ namespace StudentManagementSystem.Forms
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtPhone.Location = new System.Drawing.Point(120, 185);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(220, 29);
+            this.txtPhone.Size = new System.Drawing.Size(220, 25);
             this.txtPhone.TabIndex = 4;
             // 
             // lblPhone
@@ -144,7 +148,7 @@ namespace StudentManagementSystem.Forms
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblPhone.Location = new System.Drawing.Point(18, 188);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(63, 23);
+            this.lblPhone.Size = new System.Drawing.Size(47, 17);
             this.lblPhone.TabIndex = 5;
             this.lblPhone.Text = "Phone:";
             // 
@@ -153,7 +157,7 @@ namespace StudentManagementSystem.Forms
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtEmail.Location = new System.Drawing.Point(120, 145);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(220, 29);
+            this.txtEmail.Size = new System.Drawing.Size(220, 25);
             this.txtEmail.TabIndex = 6;
             // 
             // lblEmail
@@ -162,7 +166,7 @@ namespace StudentManagementSystem.Forms
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblEmail.Location = new System.Drawing.Point(18, 148);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(55, 23);
+            this.lblEmail.Size = new System.Drawing.Size(42, 17);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email:";
             // 
@@ -171,7 +175,7 @@ namespace StudentManagementSystem.Forms
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtLastName.Location = new System.Drawing.Point(120, 105);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(220, 29);
+            this.txtLastName.Size = new System.Drawing.Size(220, 25);
             this.txtLastName.TabIndex = 8;
             // 
             // lblLastName
@@ -180,7 +184,7 @@ namespace StudentManagementSystem.Forms
             this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblLastName.Location = new System.Drawing.Point(18, 108);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(95, 23);
+            this.lblLastName.Size = new System.Drawing.Size(73, 17);
             this.lblLastName.TabIndex = 9;
             this.lblLastName.Text = "Last Name:";
             // 
@@ -189,7 +193,7 @@ namespace StudentManagementSystem.Forms
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtFirstName.Location = new System.Drawing.Point(120, 65);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(220, 29);
+            this.txtFirstName.Size = new System.Drawing.Size(220, 25);
             this.txtFirstName.TabIndex = 10;
             // 
             // lblFirstName
@@ -198,7 +202,7 @@ namespace StudentManagementSystem.Forms
             this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblFirstName.Location = new System.Drawing.Point(18, 68);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(96, 23);
+            this.lblFirstName.Size = new System.Drawing.Size(74, 17);
             this.lblFirstName.TabIndex = 11;
             this.lblFirstName.Text = "First Name:";
             // 
@@ -207,7 +211,7 @@ namespace StudentManagementSystem.Forms
             this.txtRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtRegNumber.Location = new System.Drawing.Point(120, 25);
             this.txtRegNumber.Name = "txtRegNumber";
-            this.txtRegNumber.Size = new System.Drawing.Size(220, 29);
+            this.txtRegNumber.Size = new System.Drawing.Size(220, 25);
             this.txtRegNumber.TabIndex = 12;
             // 
             // lblRegNumber
@@ -216,7 +220,7 @@ namespace StudentManagementSystem.Forms
             this.lblRegNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblRegNumber.Location = new System.Drawing.Point(18, 28);
             this.lblRegNumber.Name = "lblRegNumber";
-            this.lblRegNumber.Size = new System.Drawing.Size(71, 23);
+            this.lblRegNumber.Size = new System.Drawing.Size(56, 17);
             this.lblRegNumber.TabIndex = 13;
             this.lblRegNumber.Text = "Reg No:";
             // 
@@ -239,7 +243,7 @@ namespace StudentManagementSystem.Forms
             this.txtLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtLoginPassword.Location = new System.Drawing.Point(120, 62);
             this.txtLoginPassword.Name = "txtLoginPassword";
-            this.txtLoginPassword.Size = new System.Drawing.Size(220, 29);
+            this.txtLoginPassword.Size = new System.Drawing.Size(220, 25);
             this.txtLoginPassword.TabIndex = 0;
             // 
             // lblLoginPassword
@@ -248,7 +252,7 @@ namespace StudentManagementSystem.Forms
             this.lblLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblLoginPassword.Location = new System.Drawing.Point(18, 65);
             this.lblLoginPassword.Name = "lblLoginPassword";
-            this.lblLoginPassword.Size = new System.Drawing.Size(84, 23);
+            this.lblLoginPassword.Size = new System.Drawing.Size(67, 17);
             this.lblLoginPassword.TabIndex = 1;
             this.lblLoginPassword.Text = "Password:";
             // 
@@ -257,7 +261,7 @@ namespace StudentManagementSystem.Forms
             this.txtLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtLoginUsername.Location = new System.Drawing.Point(120, 27);
             this.txtLoginUsername.Name = "txtLoginUsername";
-            this.txtLoginUsername.Size = new System.Drawing.Size(220, 29);
+            this.txtLoginUsername.Size = new System.Drawing.Size(220, 25);
             this.txtLoginUsername.TabIndex = 2;
             // 
             // lblLoginUsername
@@ -266,7 +270,7 @@ namespace StudentManagementSystem.Forms
             this.lblLoginUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblLoginUsername.Location = new System.Drawing.Point(18, 30);
             this.lblLoginUsername.Name = "lblLoginUsername";
-            this.lblLoginUsername.Size = new System.Drawing.Size(91, 23);
+            this.lblLoginUsername.Size = new System.Drawing.Size(70, 17);
             this.lblLoginUsername.TabIndex = 3;
             this.lblLoginUsername.Text = "Username:";
             // 
@@ -356,16 +360,44 @@ namespace StudentManagementSystem.Forms
             this.lblStudentList.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblStudentList.Location = new System.Drawing.Point(405, 80);
             this.lblStudentList.Name = "lblStudentList";
-            this.lblStudentList.Size = new System.Drawing.Size(190, 25);
+            this.lblStudentList.Size = new System.Drawing.Size(150, 20);
             this.lblStudentList.TabIndex = 8;
             this.lblStudentList.Text = "Registered Students";
             // 
+            // lblSearch
+            // 
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(625, 79);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(84, 17);
+            this.lblSearch.TabIndex = 10;
+            this.lblSearch.Text = "Search by ID:";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(715, 76);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(200, 25);
+            this.txtSearch.TabIndex = 11;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // StudentRecordsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(964, 570);
+            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblStudentList);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.btnClear);
@@ -423,5 +455,8 @@ namespace StudentManagementSystem.Forms
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.Label lblStudentList;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
