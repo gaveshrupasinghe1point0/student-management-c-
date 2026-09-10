@@ -2,16 +2,18 @@ using StudentManagementSystem.Core.Data;
 using StudentManagementSystem.Core.Exceptions;
 using StudentManagementSystem.Core.Models;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace StudentManagementSystem.Forms
 {
-    public partial class StudentRecordsForm : Form
+    public partial class StudentRecordsForm : System.Windows.Forms.Form
     {
         private readonly StudentRepository _studentRepository;
         private readonly UserRepository    _userRepository;
         private int _selectedStudentId = 0;
         private string _originalRegNumber = string.Empty;
+        private List<Student> _allStudents = new List<Student>();
 
         public StudentRecordsForm()
         {
@@ -29,10 +31,8 @@ namespace StudentManagementSystem.Forms
         {
             try
             {
-                var students = _studentRepository.GetAllStudents();
-                dgvStudents.DataSource = null;
-                dgvStudents.DataSource = students;
-                FormatGridColumns();
+                _allStudents = _studentRepository.GetAllStudents();
+                ApplyFilter();
                 ClearInputs();
             }
             catch (DatabaseException dbEx)
@@ -44,6 +44,34 @@ namespace StudentManagementSystem.Forms
             {
                 MessageBox.Show($"Failed to load students: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            ApplyFilter();
+        }
+
+        private void ApplyFilter()
+        {
+            string query = txtSearch.Text.Trim();
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = _allStudents;
+            }
+            else
+            {
+                var filtered = _allStudents.FindAll(s =>
+                    s.StudentID.ToString().IndexOf(query, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    (!string.IsNullOrEmpty(s.RegNumber) && s.RegNumber.IndexOf(query, StringComparison.OrdinalIgnoreCase) >= 0)
+                    
+                );
+
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = filtered;
+            }
+
+            FormatGridColumns();
         }
 
         private void FormatGridColumns()
@@ -266,6 +294,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            txtSearch.Clear();
             ClearInputs();
         }
 
@@ -324,5 +353,7 @@ namespace StudentManagementSystem.Forms
             if (dgvStudents.SelectedRows.Count > 0)
                 dgvStudents.ClearSelection();
         }
+
+       
     }
 }
