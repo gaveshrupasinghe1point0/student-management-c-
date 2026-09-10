@@ -7,19 +7,11 @@
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> 370d29ca34497e013d6fa59afc5bb08fe4e66155
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,12 +58,7 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAmwA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2026-09-10T11:08:44.434Z",
-              "EditorCaption": ""
-=======
-              "WhenOpened": "2026-09-10T10:10:14.395Z"
->>>>>>> 370d29ca34497e013d6fa59afc5bb08fe4e66155
+              "WhenOpened": "2026-09-10T11:23:33.643Z"
             },
             {
               "$type": "Document",
@@ -82,12 +69,7 @@
               "ToolTip": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2026-09-10T11:08:44.883Z",
-              "EditorCaption": " [Design]"
-=======
-              "WhenOpened": "2026-09-10T10:08:59.855Z"
->>>>>>> 370d29ca34497e013d6fa59afc5bb08fe4e66155
+              "WhenOpened": "2026-09-10T11:23:34.085Z"
             },
             {
               "$type": "Document",
@@ -98,7 +80,7 @@
               "ToolTip": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboardForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:08:54.086Z",
+              "WhenOpened": "2026-09-10T11:23:42.988Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -111,12 +93,7 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2026-09-10T11:08:54.173Z",
-              "EditorCaption": ""
-=======
-              "WhenOpened": "2026-09-07T03:55:48.622Z"
->>>>>>> 370d29ca34497e013d6fa59afc5bb08fe4e66155
+              "WhenOpened": "2026-09-10T11:23:43.069Z"
             },
             {
               "$type": "Document",
@@ -127,7 +104,7 @@
               "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs [Design]",
               "RelativeToolTip": "..\\..\\..\\..\\..\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:08:54.185Z"
+              "WhenOpened": "2026-09-10T11:23:43.082Z"
             }
           ]
         }
