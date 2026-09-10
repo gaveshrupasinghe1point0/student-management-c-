@@ -8,8 +8,12 @@
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\asus tuf\\documents\\github\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\asus tuf\\documents\\github\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -23,6 +27,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\devin\\source\\repos\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\devin\\source\\repos\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\studentrecordsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,6 +105,44 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "ReportCardForm.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAmwA8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:10:14.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportCardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:08:59.855Z",
+              "EditorCaption": " [Design]"
+=======
+              "DocumentIndex": 1,
+              "Title": "StudentRecordsForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.Designer.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.Designer.cs*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.Designer.cs*",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAjwHgBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:25:05.908Z",
+              "EditorCaption": ""
+>>>>>>> ac81cf1993a74405a5d4f607d10cc5a0ceefd315
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
 <<<<<<< HEAD
               "Title": "AdminDashboardForm.cs [Design]",
@@ -106,31 +152,21 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-10T09:53:08.404Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentRecordsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
 =======
               "Title": "StudentRecordsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
               "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]*",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]*",
->>>>>>> ac81cf1993a74405a5d4f607d10cc5a0ceefd315
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-10T10:11:37.53Z",
+>>>>>>> ac81cf1993a74405a5d4f607d10cc5a0ceefd315
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
 <<<<<<< HEAD
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CourseManagementForm.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -141,19 +177,20 @@
               "WhenOpened": "2026-09-07T03:55:48.622Z",
               "EditorCaption": ""
 =======
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StudentRecordsForm.cs",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAYwDgBAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs*",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwEEAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T09:56:00.181Z"
+              "WhenOpened": "2026-09-10T09:56:00.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DatabaseSetup.sql ",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
@@ -165,12 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "MainMenuForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
-=======
+              "DocumentIndex": 3,
               "Title": "CourseEnrollmentForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
@@ -182,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CourseManagementForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
@@ -194,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CourseEnrollmentForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
@@ -205,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\LoginForm.cs",
@@ -216,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CourseManagementForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -227,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CourseManagementForm.cs",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -239,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainMenuForm.cs",
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
@@ -250,8 +282,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MainMenuForm.cs [Design]",
+<<<<<<< HEAD
+              "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
+=======
               "DocumentMoniker": "C:\\Users\\Devin\\source\\repos\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
 >>>>>>> ac81cf1993a74405a5d4f607d10cc5a0ceefd315
