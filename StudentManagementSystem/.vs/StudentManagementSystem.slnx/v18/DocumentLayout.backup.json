@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\adolf.h\\documents\\github\\student-management-c-\\studentmanagementsystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\RegisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagementSystem\\Forms\\CourseManagementForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +17,38 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:StudentManagementSystem\\Forms\\StudentRecordsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\courseenrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\coursemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:StudentManagementSystem\\Forms\\CourseManagementForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\RegisterForm.cs",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "StudentRecordsForm.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
@@ -110,12 +110,11 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAHUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T03:55:48.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T03:55:48.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DatabaseSetup.sql",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Core\\Data\\DatabaseSetup.sql",
@@ -126,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CourseEnrollmentForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.Designer.cs",
@@ -138,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CourseManagementForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.Designer.cs",
@@ -150,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CourseEnrollmentForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseEnrollmentForm.cs",
@@ -161,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\LoginForm.cs",
@@ -172,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CourseManagementForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -183,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CourseManagementForm.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -195,20 +194,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "MainMenuForm.cs",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "ToolTip": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T03:55:48.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T03:55:48.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "MainMenuForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\MainMenuForm.cs",
