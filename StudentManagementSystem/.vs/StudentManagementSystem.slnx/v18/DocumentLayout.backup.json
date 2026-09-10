@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\studentrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF6D187-2901-440C-8A86-E6829D82533F}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\reportcardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\studentmanagementsystem\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -25,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,6 +53,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportCardForm.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAmwA8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:10:14.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportCardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\ReportCardForm.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\ReportCardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:08:59.855Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminDashboardForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboardForm.cs",
@@ -61,19 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentRecordsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\StudentRecordsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T03:55:48.557Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CourseManagementForm.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\CourseManagementForm.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T03:55:48.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T03:55:48.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainMenuForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Adolf.H\\Documents\\GitHub\\student-management-c-\\StudentManagementSystem\\StudentManagementSystem\\Forms\\MainMenuForm.cs",
