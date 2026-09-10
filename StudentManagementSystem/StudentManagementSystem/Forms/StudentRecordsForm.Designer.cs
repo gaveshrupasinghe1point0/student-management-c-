@@ -13,6 +13,7 @@ namespace StudentManagementSystem.Forms
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentRecordsForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpStudentDetails = new System.Windows.Forms.GroupBox();
@@ -231,14 +232,13 @@ namespace StudentManagementSystem.Forms
             this.grpLoginCredentials.Size = new System.Drawing.Size(360, 100);
             this.grpLoginCredentials.TabIndex = 9;
             this.grpLoginCredentials.TabStop = false;
-            this.grpLoginCredentials.Text = "Login Credentials (set on Add only)";
+            this.grpLoginCredentials.Text = "Login Credentials";
             // 
             // txtLoginPassword
             // 
             this.txtLoginPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtLoginPassword.Location = new System.Drawing.Point(120, 62);
             this.txtLoginPassword.Name = "txtLoginPassword";
-            this.txtLoginPassword.PasswordChar = '*';
             this.txtLoginPassword.Size = new System.Drawing.Size(220, 29);
             this.txtLoginPassword.TabIndex = 0;
             // 
@@ -376,6 +376,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.grpStudentDetails);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "StudentRecordsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

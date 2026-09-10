@@ -192,4 +192,3 @@ BEGIN
     (2, 12500.00, CAST(GETDATE() AS DATE), 'Pending');
 END
 GO
-

@@ -1,6 +1,6 @@
 namespace StudentManagementSystem.Forms
 {
-    partial class MainMenuForm
+    partial class AdminDashboardForm
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -13,6 +13,7 @@ namespace StudentManagementSystem.Forms
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlButtons = new System.Windows.Forms.TableLayoutPanel();
@@ -115,7 +116,7 @@ namespace StudentManagementSystem.Forms
             // 
             // btnCourses
             // 
-            this.btnCourses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.btnCourses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnCourses.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCourses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCourses.FlatAppearance.BorderSize = 0;
@@ -230,10 +231,11 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(600, 450);
             this.Name = "MainMenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main Menu - LMS Student Management System";
+            this.Text = "Admin Dashboard - LMS Student Management System";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlButtons.ResumeLayout(false);

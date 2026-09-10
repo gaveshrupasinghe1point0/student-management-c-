@@ -17,7 +17,7 @@ namespace StudentManagementSystem.Core.Data
             }
 
             // Fallback default for LocalDB
-            return @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentDB;Integrated Security=True;";
+            return @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentDB.mdf;Integrated Security=True;Connect Timeout=30;";
         }
 
         public static SqlConnection GetConnection()

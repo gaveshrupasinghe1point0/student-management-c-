@@ -28,6 +28,7 @@ namespace StudentManagementSystem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentProfileForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnViewReportCard = new System.Windows.Forms.Button();
@@ -120,7 +121,7 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(22, 18);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(262, 32);
+            this.lblHeader.Size = new System.Drawing.Size(324, 41);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Portal Profile";
             // 
@@ -153,7 +154,7 @@ namespace StudentManagementSystem.Forms
             this.lblPhoneVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblPhoneVal.Location = new System.Drawing.Point(620, 60);
             this.lblPhoneVal.Name = "lblPhoneVal";
-            this.lblPhoneVal.Size = new System.Drawing.Size(13, 17);
+            this.lblPhoneVal.Size = new System.Drawing.Size(17, 23);
             this.lblPhoneVal.TabIndex = 7;
             this.lblPhoneVal.Text = "-";
             // 
@@ -164,7 +165,7 @@ namespace StudentManagementSystem.Forms
             this.lblPhone.ForeColor = System.Drawing.Color.Gray;
             this.lblPhone.Location = new System.Drawing.Point(530, 60);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(50, 17);
+            this.lblPhone.Size = new System.Drawing.Size(63, 23);
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone:";
             // 
@@ -175,7 +176,7 @@ namespace StudentManagementSystem.Forms
             this.lblEmailVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblEmailVal.Location = new System.Drawing.Point(620, 30);
             this.lblEmailVal.Name = "lblEmailVal";
-            this.lblEmailVal.Size = new System.Drawing.Size(13, 17);
+            this.lblEmailVal.Size = new System.Drawing.Size(17, 23);
             this.lblEmailVal.TabIndex = 5;
             this.lblEmailVal.Text = "-";
             // 
@@ -186,7 +187,7 @@ namespace StudentManagementSystem.Forms
             this.lblEmail.ForeColor = System.Drawing.Color.Gray;
             this.lblEmail.Location = new System.Drawing.Point(530, 30);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(43, 17);
+            this.lblEmail.Size = new System.Drawing.Size(55, 23);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Email:";
             // 
@@ -197,7 +198,7 @@ namespace StudentManagementSystem.Forms
             this.lblRegNoVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblRegNoVal.Location = new System.Drawing.Point(145, 60);
             this.lblRegNoVal.Name = "lblRegNoVal";
-            this.lblRegNoVal.Size = new System.Drawing.Size(13, 17);
+            this.lblRegNoVal.Size = new System.Drawing.Size(17, 23);
             this.lblRegNoVal.TabIndex = 3;
             this.lblRegNoVal.Text = "-";
             // 
@@ -208,7 +209,7 @@ namespace StudentManagementSystem.Forms
             this.lblRegNo.ForeColor = System.Drawing.Color.Gray;
             this.lblRegNo.Location = new System.Drawing.Point(30, 60);
             this.lblRegNo.Name = "lblRegNo";
-            this.lblRegNo.Size = new System.Drawing.Size(77, 17);
+            this.lblRegNo.Size = new System.Drawing.Size(96, 23);
             this.lblRegNo.TabIndex = 2;
             this.lblRegNo.Text = "Student ID:";
             // 
@@ -219,7 +220,7 @@ namespace StudentManagementSystem.Forms
             this.lblNameVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lblNameVal.Location = new System.Drawing.Point(145, 30);
             this.lblNameVal.Name = "lblNameVal";
-            this.lblNameVal.Size = new System.Drawing.Size(13, 17);
+            this.lblNameVal.Size = new System.Drawing.Size(17, 23);
             this.lblNameVal.TabIndex = 1;
             this.lblNameVal.Text = "-";
             // 
@@ -230,7 +231,7 @@ namespace StudentManagementSystem.Forms
             this.lblName.ForeColor = System.Drawing.Color.Gray;
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(72, 17);
+            this.lblName.Size = new System.Drawing.Size(92, 23);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Full Name:";
             // 
@@ -265,6 +266,7 @@ namespace StudentManagementSystem.Forms
             this.dgvEnrolledCourses.Name = "dgvEnrolledCourses";
             this.dgvEnrolledCourses.ReadOnly = true;
             this.dgvEnrolledCourses.RowHeadersVisible = false;
+            this.dgvEnrolledCourses.RowHeadersWidth = 51;
             this.dgvEnrolledCourses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEnrolledCourses.Size = new System.Drawing.Size(880, 145);
             this.dgvEnrolledCourses.TabIndex = 0;
@@ -299,13 +301,14 @@ namespace StudentManagementSystem.Forms
             this.dgvMyGrades.Name = "dgvMyGrades";
             this.dgvMyGrades.ReadOnly = true;
             this.dgvMyGrades.RowHeadersVisible = false;
+            this.dgvMyGrades.RowHeadersWidth = 51;
             this.dgvMyGrades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMyGrades.Size = new System.Drawing.Size(880, 130);
             this.dgvMyGrades.TabIndex = 0;
             // 
             // StudentProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(960, 595);
@@ -314,6 +317,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.grpProfile);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Portal - My Profile";

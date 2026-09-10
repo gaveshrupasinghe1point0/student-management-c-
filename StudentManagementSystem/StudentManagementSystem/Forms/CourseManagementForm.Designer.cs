@@ -8,6 +8,7 @@ namespace StudentManagementSystem.Forms
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CourseManagementForm));
             this.lblHeader = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.btnOpenEnrollments = new System.Windows.Forms.Button();
@@ -279,6 +280,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.grpCourseDetails);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(700, 380);
             this.Name = "CourseManagementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

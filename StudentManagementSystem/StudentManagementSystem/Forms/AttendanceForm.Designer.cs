@@ -28,6 +28,7 @@ namespace StudentManagementSystem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AttendanceForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpAttendance = new System.Windows.Forms.GroupBox();
@@ -254,6 +255,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.lblGridTitle);
             this.Controls.Add(this.grpAttendance);
             this.Controls.Add(this.pnlHeader);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AttendanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Attendance Management";

@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace StudentManagementSystem.Forms
 {
-    public partial class MainMenuForm : Form
+    public partial class AdminDashboardForm : Form
     {
-        public MainMenuForm()
+        public AdminDashboardForm()
         {
             InitializeComponent();
         }

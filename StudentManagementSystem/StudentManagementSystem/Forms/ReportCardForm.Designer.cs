@@ -28,6 +28,7 @@ namespace StudentManagementSystem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportCardForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpSearch = new System.Windows.Forms.GroupBox();
@@ -58,7 +59,7 @@ namespace StudentManagementSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(20, 16);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(250, 32);
+            this.lblHeader.Size = new System.Drawing.Size(308, 41);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Report Card";
             // 
@@ -86,7 +87,7 @@ namespace StudentManagementSystem.Forms
             this.lblStudentInfo.ForeColor = System.Drawing.Color.DimGray;
             this.lblStudentInfo.Location = new System.Drawing.Point(105, 68);
             this.lblStudentInfo.Name = "lblStudentInfo";
-            this.lblStudentInfo.Size = new System.Drawing.Size(107, 13);
+            this.lblStudentInfo.Size = new System.Drawing.Size(120, 19);
             this.lblStudentInfo.TabIndex = 2;
             this.lblStudentInfo.Text = "Enter Student ID...";
             // 
@@ -95,7 +96,7 @@ namespace StudentManagementSystem.Forms
             this.txtSearchStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtSearchStudent.Location = new System.Drawing.Point(105, 38);
             this.txtSearchStudent.Name = "txtSearchStudent";
-            this.txtSearchStudent.Size = new System.Drawing.Size(320, 25);
+            this.txtSearchStudent.Size = new System.Drawing.Size(320, 29);
             this.txtSearchStudent.TabIndex = 1;
             this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchStudent_TextChanged);
             // 
@@ -105,7 +106,7 @@ namespace StudentManagementSystem.Forms
             this.lblStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblStudent.Location = new System.Drawing.Point(20, 41);
             this.lblStudent.Name = "lblStudent";
-            this.lblStudent.Size = new System.Drawing.Size(71, 17);
+            this.lblStudent.Size = new System.Drawing.Size(95, 23);
             this.lblStudent.TabIndex = 0;
             this.lblStudent.Text = "Student ID:";
             // 
@@ -131,16 +132,16 @@ namespace StudentManagementSystem.Forms
             this.rtbReportPreview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbReportPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbReportPreview.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbReportPreview.Location = new System.Drawing.Point(3, 21);
+            this.rtbReportPreview.Location = new System.Drawing.Point(3, 26);
             this.rtbReportPreview.Name = "rtbReportPreview";
             this.rtbReportPreview.ReadOnly = true;
-            this.rtbReportPreview.Size = new System.Drawing.Size(866, 356);
+            this.rtbReportPreview.Size = new System.Drawing.Size(866, 351);
             this.rtbReportPreview.TabIndex = 0;
             this.rtbReportPreview.Text = "";
             // 
             // ReportCardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(920, 590);
@@ -148,6 +149,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.grpSearch);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReportCardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Report Card";

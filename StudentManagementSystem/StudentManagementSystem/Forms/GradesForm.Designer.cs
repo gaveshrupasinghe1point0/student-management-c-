@@ -28,6 +28,7 @@ namespace StudentManagementSystem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GradesForm));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.grpGrades = new System.Windows.Forms.GroupBox();
@@ -247,6 +248,7 @@ namespace StudentManagementSystem.Forms
             this.Controls.Add(this.lblGridTitle);
             this.Controls.Add(this.grpGrades);
             this.Controls.Add(this.pnlHeader);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GradesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grades Management";

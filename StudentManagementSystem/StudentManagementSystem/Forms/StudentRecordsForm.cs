@@ -1,4 +1,4 @@
-﻿using StudentManagementSystem.Core.Data;
+using StudentManagementSystem.Core.Data;
 using StudentManagementSystem.Core.Exceptions;
 using StudentManagementSystem.Core.Models;
 using System;
@@ -11,6 +11,7 @@ namespace StudentManagementSystem.Forms
         private readonly StudentRepository _studentRepository;
         private readonly UserRepository    _userRepository;
         private int _selectedStudentId = 0;
+        private string _originalRegNumber = string.Empty;
 
         public StudentRecordsForm()
         {
@@ -53,6 +54,8 @@ namespace StudentManagementSystem.Forms
             if (dgvStudents.Columns["RegNumber"] != null) dgvStudents.Columns["RegNumber"].HeaderText = "Reg No";
             if (dgvStudents.Columns["FirstName"] != null) dgvStudents.Columns["FirstName"].HeaderText = "First Name";
             if (dgvStudents.Columns["LastName"]  != null) dgvStudents.Columns["LastName"].HeaderText  = "Last Name";
+            if (dgvStudents.Columns["Username"]  != null) dgvStudents.Columns["Username"].HeaderText  = "Username";
+            if (dgvStudents.Columns["Password"]  != null) dgvStudents.Columns["Password"].HeaderText  = "Password";
             if (dgvStudents.Columns["DateOfBirth"]  != null) dgvStudents.Columns["DateOfBirth"].HeaderText = "DOB";
             if (dgvStudents.Columns["EnrollmentDate"] != null) dgvStudents.Columns["EnrollmentDate"].HeaderText = "Enrolled Date";
         }
@@ -148,13 +151,48 @@ namespace StudentManagementSystem.Forms
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtLoginUsername.Text))
+            {
+                MessageBox.Show("Please enter a username for the student's login account.",
+                    "Username Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLoginUsername.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtLoginPassword.Text))
+            {
+                MessageBox.Show("Please enter a password for the student's login account.",
+                    "Password Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLoginPassword.Focus();
+                return;
+            }
+
+            if (txtLoginPassword.Text.Length < 8)
+            {
+                MessageBox.Show("Password must be at least 8 characters long.",
+                    "Weak Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLoginPassword.Focus();
+                return;
+            }
+
             try
             {
                 var student = BuildStudentFromInputs();
                 student.StudentID = _selectedStudentId;
                 _studentRepository.UpdateStudent(student);
 
-                MessageBox.Show($"Student record '{student.RegNumber}' updated successfully!",
+                // Update or create user account in Users table
+                _userRepository.SaveOrUpdateStudentUser(
+                    oldIdNumber: _originalRegNumber,
+                    newIdNumber: student.RegNumber,
+                    username:    txtLoginUsername.Text.Trim(),
+                    password:    txtLoginPassword.Text,
+                    fullName:    student.FullName,
+                    email:       student.Email,
+                    phone:       student.Phone
+                );
+
+                MessageBox.Show($"Student record '{student.RegNumber}' and login credentials updated successfully!",
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadStudents();
@@ -195,7 +233,17 @@ namespace StudentManagementSystem.Forms
             {
                 _studentRepository.DeleteStudent(_selectedStudentId);
 
-                MessageBox.Show("Student record deleted successfully.", 
+                // Also deactivate student's login account in Users table
+                if (!string.IsNullOrWhiteSpace(_originalRegNumber))
+                {
+                    _userRepository.DeactivateUserByIdNumber(_originalRegNumber);
+                }
+                else if (!string.IsNullOrWhiteSpace(txtRegNumber.Text))
+                {
+                    _userRepository.DeactivateUserByIdNumber(txtRegNumber.Text.Trim());
+                }
+
+                MessageBox.Show("Student record and login account deleted successfully.", 
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadStudents();
             }
@@ -216,7 +264,6 @@ namespace StudentManagementSystem.Forms
             }
         }
 
-        
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearInputs();
@@ -230,6 +277,7 @@ namespace StudentManagementSystem.Forms
                 if (row.DataBoundItem is Student selectedStudent)
                 {
                     _selectedStudentId      = selectedStudent.StudentID;
+                    _originalRegNumber      = selectedStudent.RegNumber;
                     txtRegNumber.Text       = selectedStudent.RegNumber;
                     txtFirstName.Text       = selectedStudent.FirstName;
                     txtLastName.Text        = selectedStudent.LastName;
@@ -237,14 +285,14 @@ namespace StudentManagementSystem.Forms
                     txtPhone.Text           = selectedStudent.Phone;
                     txtAddress.Text         = selectedStudent.Address;
                     dtpDOB.Value            = selectedStudent.DateOfBirth;
-                    // Clear credentials fields 
-                    txtLoginUsername.Clear();
-                    txtLoginPassword.Clear();
+
+                    // Display user credentials in the form
+                    txtLoginUsername.Text   = selectedStudent.Username ?? string.Empty;
+                    txtLoginPassword.Text   = selectedStudent.Password ?? string.Empty;
                 }
             }
         }
 
-        
         private Student BuildStudentFromInputs()
         {
             return new Student
@@ -259,10 +307,10 @@ namespace StudentManagementSystem.Forms
             };
         }
 
-        
         private void ClearInputs()
         {
             _selectedStudentId = 0;
+            _originalRegNumber = string.Empty;
             txtRegNumber.Clear();
             txtFirstName.Clear();
             txtLastName.Clear();
