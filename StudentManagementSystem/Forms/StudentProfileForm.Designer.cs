@@ -57,7 +57,7 @@ namespace StudentManagementSystem.Forms
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.pnlHeader.BackColor = System.Drawing.Color.ForestGreen;
             this.pnlHeader.Controls.Add(this.lblWelcome);
             this.pnlHeader.Controls.Add(this.btnViewReportCard);
             this.pnlHeader.Controls.Add(this.btnLogout);
@@ -73,9 +73,9 @@ namespace StudentManagementSystem.Forms
             this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblWelcome.Location = new System.Drawing.Point(365, 24);
+            this.lblWelcome.Location = new System.Drawing.Point(387, 24);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(295, 22);
+            this.lblWelcome.Size = new System.Drawing.Size(273, 22);
             this.lblWelcome.TabIndex = 2;
             this.lblWelcome.Text = "Welcome, Student";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -83,7 +83,7 @@ namespace StudentManagementSystem.Forms
             // btnViewReportCard
             // 
             this.btnViewReportCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewReportCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnViewReportCard.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnViewReportCard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewReportCard.FlatAppearance.BorderSize = 0;
             this.btnViewReportCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -117,11 +117,11 @@ namespace StudentManagementSystem.Forms
             // lblHeader
             // 
             this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.Font = new System.Drawing.Font("Palatino Linotype", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(22, 18);
+            this.lblHeader.Location = new System.Drawing.Point(34, 13);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(324, 41);
+            this.lblHeader.Size = new System.Drawing.Size(342, 45);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Student Portal Profile";
             // 
@@ -138,7 +138,7 @@ namespace StudentManagementSystem.Forms
             this.grpProfile.Controls.Add(this.lblRegNo);
             this.grpProfile.Controls.Add(this.lblNameVal);
             this.grpProfile.Controls.Add(this.lblName);
-            this.grpProfile.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.grpProfile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.grpProfile.Location = new System.Drawing.Point(24, 85);
             this.grpProfile.Name = "grpProfile";
@@ -242,7 +242,7 @@ namespace StudentManagementSystem.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCourses.BackColor = System.Drawing.Color.White;
             this.grpCourses.Controls.Add(this.dgvEnrolledCourses);
-            this.grpCourses.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.grpCourses.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCourses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.grpCourses.Location = new System.Drawing.Point(24, 200);
             this.grpCourses.Name = "grpCourses";
@@ -277,14 +277,14 @@ namespace StudentManagementSystem.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpGrades.BackColor = System.Drawing.Color.White;
             this.grpGrades.Controls.Add(this.dgvMyGrades);
-            this.grpGrades.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.grpGrades.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGrades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.grpGrades.Location = new System.Drawing.Point(24, 400);
             this.grpGrades.Name = "grpGrades";
             this.grpGrades.Size = new System.Drawing.Size(912, 175);
             this.grpGrades.TabIndex = 3;
             this.grpGrades.TabStop = false;
-            this.grpGrades.Text = "My Grades & Academic Results";
+            this.grpGrades.Text = "My Grades and Academic Results";
             // 
             // dgvMyGrades
             // 
@@ -311,11 +311,14 @@ namespace StudentManagementSystem.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.BackgroundImage = global::StudentManagementSystem.Properties.Resources.image1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 595);
             this.Controls.Add(this.grpGrades);
             this.Controls.Add(this.grpCourses);
             this.Controls.Add(this.grpProfile);
             this.Controls.Add(this.pnlHeader);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentProfileForm";

@@ -203,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nsbmlogo %281%29.png" />
+    <None Include="Resources\image1.png" />
     <Content Include="StudentDB.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

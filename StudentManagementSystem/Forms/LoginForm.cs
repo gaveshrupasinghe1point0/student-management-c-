@@ -35,13 +35,11 @@ namespace StudentManagementSystem.Forms
 
                 if (user.Role == "Admin")
                 {
-                    // Signal Program.cs that login succeeded → MainMenuForm will open
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
                 else
                 {
-                    // Student account → open Student Profile Form
                     this.Hide();
                     StudentProfileForm profileForm = new StudentProfileForm(user);
                     profileForm.ShowDialog();
@@ -53,6 +51,9 @@ namespace StudentManagementSystem.Forms
                 MessageBox.Show(authEx.Message, "Login Failed",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPassword.Clear();
+                txtPassword.PasswordChar = '*';
+                btnTogglePassword.Text = "👁";
+                toolTip1.SetToolTip(btnTogglePassword, "Show Password");
                 txtPassword.Focus();
             }
             catch (DatabaseException dbEx)
@@ -64,6 +65,35 @@ namespace StudentManagementSystem.Forms
             {
                 MessageBox.Show($"An unexpected error occurred: {ex.Message}",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnTogglePassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                txtPassword.PasswordChar = '\0';
+                btnTogglePassword.Text = "🔒";
+                toolTip1.SetToolTip(btnTogglePassword, "Hide Password");
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+                btnTogglePassword.Text = "👁";
+                toolTip1.SetToolTip(btnTogglePassword, "Show Password");
+            }
+
+            txtPassword.Focus();
+            txtPassword.SelectionStart = txtPassword.Text.Length;
+            txtPassword.SelectionLength = 0;
+        }
+
+        private void TxtInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; 
+                btnLogin.PerformClick();
             }
         }
 

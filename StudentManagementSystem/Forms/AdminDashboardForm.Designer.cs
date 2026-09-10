@@ -33,7 +33,7 @@ namespace StudentManagementSystem.Forms
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(784, 80);
+            this.pnlHeader.Size = new System.Drawing.Size(827, 80);
             this.pnlHeader.TabIndex = 0;
             // 
             // lblTitle
@@ -164,7 +164,7 @@ namespace StudentManagementSystem.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(827, 461);
             this.Controls.Add(this.btnAuth);
             this.Controls.Add(this.btnStudentRecords);
             this.Controls.Add(this.btnCourses);

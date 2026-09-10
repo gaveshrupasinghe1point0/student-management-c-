@@ -30,7 +30,6 @@ namespace StudentManagementSystem.Forms
         {
             lblWelcome.Text = $"Welcome, {_currentUser.FullName}";
 
-            // Look up corresponding Student record via IdNumber (RegNumber) or Email
             try
             {
                 using (SqlConnection con = DatabaseHelper.GetConnection())
@@ -73,7 +72,6 @@ namespace StudentManagementSystem.Forms
                 MessageBox.Show($"Failed to load student record: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            // Bind values to UI labels
             if (_currentStudent != null)
             {
                 lblNameVal.Text = $"{_currentStudent.FirstName} {_currentStudent.LastName}";
@@ -83,7 +81,6 @@ namespace StudentManagementSystem.Forms
             }
             else
             {
-                // Fallback to User profile if Student record is not linked yet
                 lblNameVal.Text = _currentUser.FullName;
                 lblRegNoVal.Text = string.IsNullOrWhiteSpace(_currentUser.IdNumber) ? "N/A" : _currentUser.IdNumber;
                 lblEmailVal.Text = _currentUser.Email;
