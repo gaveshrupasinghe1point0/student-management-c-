@@ -90,7 +90,7 @@ namespace StudentManagementSystem.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Validate login credentials are provided
+            // Validate login credentials 
             if (string.IsNullOrWhiteSpace(txtLoginUsername.Text))
             {
                 MessageBox.Show("Please enter a username for the student's login account.",
