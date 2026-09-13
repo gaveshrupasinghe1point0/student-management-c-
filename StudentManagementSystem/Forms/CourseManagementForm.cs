@@ -23,9 +23,6 @@ namespace StudentManagementSystem.Forms
             LoadCourses();
         }
 
-        /// <summary>
-        /// Loads courses from the database and binds them to the DataGridView.
-        /// </summary>
         private void LoadCourses()
         {
             try
@@ -70,8 +67,7 @@ namespace StudentManagementSystem.Forms
             if (dgvCourses.Columns["Department"] != null)
                 dgvCourses.Columns["Department"].HeaderText = "Department";
 
-            if (dgvCourses.Columns["AssignedTeacherID"] != null)
-                dgvCourses.Columns["AssignedTeacherID"].HeaderText = "Teacher ID";
+          
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -215,7 +211,7 @@ namespace StudentManagementSystem.Forms
                 CourseName = txtCourseName.Text.Trim(),
                 Credits = (int)numCredits.Value,
                 Department = txtDepartment.Text.Trim(),
-                AssignedTeacherID = null // Reserved for Member 7 Timetable assignment
+               
             };
         }
 
