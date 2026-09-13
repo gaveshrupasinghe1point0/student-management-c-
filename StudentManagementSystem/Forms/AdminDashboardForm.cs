@@ -24,24 +24,21 @@ namespace StudentManagementSystem.Forms
         {
             if (btnAuth == null || pnlHeader == null) return;
 
-            // Center header title in header panel
             lblTitle.Left = Math.Max(20, (pnlHeader.Width - lblTitle.Width) / 2);
             lblTitle.Top = Math.Max(10, (pnlHeader.Height - lblTitle.Height) / 2);
 
-            int padX = 30;   // left + right padding so buttons never touch the edges
-            int padY = 20;   // top gap below header & bottom padding
+            int padX = 30;   
+            int padY = 20;   
             int topOffset = pnlHeader.Height + padY;
             int availableWidth  = this.ClientSize.Width - (2 * padX);
             int availableHeight = this.ClientSize.Height - topOffset - padY;
 
-            int gapX = 20;   // horizontal gap between the two columns
-            int gapY = 14;   // vertical gap between rows
+            int gapX = 20;   
+            int gapY = 14;   
 
-            // Equal button width for 2 columns, equal height for 4 rows
             int btnWidth  = Math.Max(200, (availableWidth - gapX) / 2);
             int btnHeight = Math.Max(45,  (availableHeight - (3 * gapY)) / 4);
 
-            // Center the grid inside the padded area
             int totalGridWidth  = (btnWidth * 2) + gapX;
             int totalGridHeight = (btnHeight * 4) + (gapY * 3);
 
@@ -52,21 +49,17 @@ namespace StudentManagementSystem.Forms
             int col1X = startX;
             int col2X = startX + btnWidth + gapX;
 
-            // Row 0
             btnAuth.SetBounds(col1X, startY, btnWidth, btnHeight);
             btnStudentRecords.SetBounds(col2X, startY, btnWidth, btnHeight);
 
-            // Row 1
             int row1Y = startY + btnHeight + gapY;
             btnCourses.SetBounds(col1X, row1Y, btnWidth, btnHeight);
             btnAttendance.SetBounds(col2X, row1Y, btnWidth, btnHeight);
 
-            // Row 2
             int row2Y = startY + (btnHeight + gapY) * 2;
             btnGrades.SetBounds(col1X, row2Y, btnWidth, btnHeight);
             btnFees.SetBounds(col2X, row2Y, btnWidth, btnHeight);
 
-            // Row 3: Report Card (Centered with the EXACT same width & height as all other buttons!)
             int row3Y = startY + (btnHeight + gapY) * 3;
             int reportCardX = (availableWidth - btnWidth) / 2;
             btnReportCard.SetBounds(reportCardX, row3Y, btnWidth, btnHeight);
@@ -74,21 +67,18 @@ namespace StudentManagementSystem.Forms
 
         private void btnAuth_Click(object sender, EventArgs e)
         {
-            // Member 1: Launch Authentication / Login Form
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
 
         private void btnStudentRecords_Click(object sender, EventArgs e)
         {
-            // Member 2: Launch Student Records Form
             StudentRecordsForm studentForm = new StudentRecordsForm();
             studentForm.Show();
         }
 
         private void btnCourses_Click(object sender, EventArgs e)
         {
-            // Member 3: Launch Course Management Form
             CourseManagementForm courseForm = new CourseManagementForm();
             courseForm.Show();
         }

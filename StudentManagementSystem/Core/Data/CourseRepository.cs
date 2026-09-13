@@ -9,9 +9,6 @@ namespace StudentManagementSystem.Core.Data
 {
     public class CourseRepository
     {
-        /// <summary>
-        /// Retrieves all active courses from the database.
-        /// </summary>
         public List<Course> GetAllCourses()
         {
             var courses = new List<Course>();
@@ -35,9 +32,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Retrieves a course by its CourseID.
-        /// </summary>
         public Course GetCourseById(int courseId)
         {
             string query = @"SELECT CourseID, CourseCode, CourseName, Credits, Department, AssignedTeacherID, IsActive 
@@ -62,9 +56,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Inserts a new course into the database.
-        /// </summary>
         public void AddCourse(Course course)
         {
             if (course == null)
@@ -96,9 +87,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Updates an existing course in the database.
-        /// </summary>
         public void UpdateCourse(Course course)
         {
             if (course == null)
@@ -138,9 +126,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Soft-deletes a course (sets IsActive = 0).
-        /// </summary>
         public void DeleteCourse(int courseId)
         {
             string query = @"UPDATE Courses SET IsActive = 0 WHERE CourseID = @CourseID";
@@ -161,9 +146,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Checks if a course code already exists.
-        /// </summary>
         public bool CourseCodeExists(string courseCode, int excludeCourseId = 0)
         {
             string query = @"SELECT COUNT(1) FROM Courses 

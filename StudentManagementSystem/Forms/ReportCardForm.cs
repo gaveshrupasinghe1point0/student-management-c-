@@ -35,7 +35,6 @@ namespace StudentManagementSystem.Forms
         {
             if (_selectedStudent != null)
             {
-                // Student POV: locked to logged-in student, hide search panel entirely
                 grpSearch.Visible = false;
                 btnExport.Visible = false;
                 this.Text = "My Academic Report Card";
@@ -46,7 +45,6 @@ namespace StudentManagementSystem.Forms
             }
             else
             {
-                // Admin POV: enable search by Student ID and export button
                 grpSearch.Visible = true;
                 btnExport.Visible = true;
                 LoadStudentSearchData();
@@ -127,7 +125,6 @@ namespace StudentManagementSystem.Forms
             {
                 using (SqlConnection con = DatabaseHelper.GetConnection())
                 {
-                    // 1. Enrolled Courses
                     string courseQuery = @"
                         SELECT c.CourseCode, c.CourseName, c.Credits, c.Department, sc.Status
                         FROM StudentCourses sc
@@ -142,7 +139,6 @@ namespace StudentManagementSystem.Forms
                         da.Fill(_coursesTable);
                     }
 
-                    // 2. Grades
                     string gradesQuery = @"
                         SELECT c.CourseCode, c.CourseName, g.GradeValue, g.Remarks, g.RecordedDate
                         FROM Grades g
@@ -157,7 +153,6 @@ namespace StudentManagementSystem.Forms
                         da.Fill(_gradesTable);
                     }
 
-                    // 3. Attendance Summary
                     string attendanceQuery = @"
                         SELECT 
                             c.CourseCode,
@@ -178,7 +173,6 @@ namespace StudentManagementSystem.Forms
                     }
                 }
 
-                // Render text preview
                 RenderTextReport();
             }
             catch (Exception ex)

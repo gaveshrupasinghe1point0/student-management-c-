@@ -33,7 +33,6 @@ namespace StudentManagementSystem.Forms
         {
             try
             {
-                // Populate Students for Search Autocomplete
                 StudentRepository studentRepo = new StudentRepository();
                 _allStudents = studentRepo.GetAllStudents();
 
@@ -51,7 +50,6 @@ namespace StudentManagementSystem.Forms
                 {
                     conn.Open();
 
-                    // Populate Course Dropdown
                     string courseQuery = "SELECT CourseID, (CourseCode + ' - ' + CourseName) AS DisplayText FROM Courses WHERE IsActive = 1 ORDER BY CourseCode";
                     SqlDataAdapter daCourses = new SqlDataAdapter(courseQuery, conn);
                     DataTable dtCourses = new DataTable();

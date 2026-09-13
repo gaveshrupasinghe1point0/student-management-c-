@@ -9,9 +9,6 @@ namespace StudentManagementSystem.Core.Data
 {
     public class EnrollmentRepository
     {
-        /// <summary>
-        /// Enrolls a student into a course.
-        /// </summary>
         public void EnrollStudent(int studentId, int courseId)
         {
             if (IsStudentEnrolled(studentId, courseId))
@@ -35,9 +32,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Drops or un-enrolls a student from a course.
-        /// </summary>
         public void UnenrollStudent(int studentId, int courseId)
         {
             string query = @"DELETE FROM StudentCourses WHERE StudentID = @StudentID AND CourseID = @CourseID";
@@ -59,9 +53,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Checks if a student is already enrolled in a specific course.
-        /// </summary>
         public bool IsStudentEnrolled(int studentId, int courseId)
         {
             string query = @"SELECT COUNT(1) FROM StudentCourses WHERE StudentID = @StudentID AND CourseID = @CourseID";
@@ -82,9 +73,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Retrieves all enrollments joining Students and Courses tables.
-        /// </summary>
         public DataTable GetAllEnrollmentsView()
         {
             string query = @"SELECT sc.EnrollmentID, 

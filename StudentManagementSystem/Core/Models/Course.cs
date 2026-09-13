@@ -25,10 +25,6 @@ namespace StudentManagementSystem.Core.Models
             IsActive = true;
         }
 
-        /// <summary>
-        /// Validates domain requirements for a course.
-        /// Throws ValidationException if validation fails.
-        /// </summary>
         public void Validate()
         {
             if (string.IsNullOrWhiteSpace(CourseCode))

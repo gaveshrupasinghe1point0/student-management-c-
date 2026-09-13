@@ -90,7 +90,6 @@ namespace StudentManagementSystem.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Validate login credentials 
             if (string.IsNullOrWhiteSpace(txtLoginUsername.Text))
             {
                 MessageBox.Show("Please enter a username for the student's login account.",
@@ -209,7 +208,6 @@ namespace StudentManagementSystem.Forms
                 student.StudentID = _selectedStudentId;
                 _studentRepository.UpdateStudent(student);
 
-                // Update or create user account in Users table
                 _userRepository.SaveOrUpdateStudentUser(
                     oldIdNumber: _originalRegNumber,
                     newIdNumber: student.RegNumber,
@@ -261,7 +259,6 @@ namespace StudentManagementSystem.Forms
             {
                 _studentRepository.DeleteStudent(_selectedStudentId);
 
-                // Also deactivate student's login account in Users table
                 if (!string.IsNullOrWhiteSpace(_originalRegNumber))
                 {
                     _userRepository.DeactivateUserByIdNumber(_originalRegNumber);
@@ -315,7 +312,6 @@ namespace StudentManagementSystem.Forms
                     txtAddress.Text         = selectedStudent.Address;
                     dtpDOB.Value            = selectedStudent.DateOfBirth;
 
-                    // Display user credentials in the form
                     txtLoginUsername.Text   = selectedStudent.Username ?? string.Empty;
                     txtLoginPassword.Text   = selectedStudent.Password ?? string.Empty;
                 }

@@ -16,7 +16,6 @@ namespace StudentManagementSystem.Core.Data
                 return ConfigurationManager.ConnectionStrings["StudentDB"].ConnectionString;
             }
 
-            // Fallback default for LocalDB
             return @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentDB.mdf;Integrated Security=True;Connect Timeout=30;";
         }
 

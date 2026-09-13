@@ -6,15 +6,8 @@ using System.Data.SqlClient;
 
 namespace StudentManagementSystem.Core.Data
 {
-    /// <summary>
-    /// Handles all database operations for the Users table.
-    /// Member 1 - Auth / Roles module.
-    /// </summary>
     public class UserRepository
     {
-        /// <summary>
-        /// Validates login credentials. Returns the matching User or throws AuthenticationException.
-        /// </summary>
         public User Authenticate(string username, string password)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
@@ -51,9 +44,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Registers a new user account in the database.
-        /// </summary>
         public void RegisterUser(User user, string password)
         {
             if (user == null)
@@ -98,9 +88,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Returns true if the username is already taken.
-        /// </summary>
         public bool UsernameExists(string username, int excludeUserId = 0)
         {
             string query = @"SELECT COUNT(1) FROM Users
@@ -122,9 +109,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Retrieves active user account by registration / ID number.
-        /// </summary>
         public User GetUserByIdNumber(string idNumber)
         {
             if (string.IsNullOrWhiteSpace(idNumber)) return null;
@@ -150,9 +134,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Updates an existing student's login account or creates a new one if it doesn't exist.
-        /// </summary>
         public void SaveOrUpdateStudentUser(string oldIdNumber, string newIdNumber, string username, string password, string fullName, string email, string phone)
         {
             if (string.IsNullOrWhiteSpace(username))
@@ -164,7 +145,6 @@ namespace StudentManagementSystem.Core.Data
             if (password.Length < 8)
                 throw new ValidationException("Password must be at least 8 characters long.");
 
-            // Find if user already exists by old or new RegNumber
             User existingUser = null;
             if (!string.IsNullOrWhiteSpace(oldIdNumber))
             {
@@ -177,7 +157,6 @@ namespace StudentManagementSystem.Core.Data
 
             if (existingUser != null)
             {
-                // Verify username isn't taken by someone else
                 if (UsernameExists(username, existingUser.UserID))
                     throw new ValidationException($"Username '{username}' is already taken.");
 
@@ -211,7 +190,6 @@ namespace StudentManagementSystem.Core.Data
             }
             else
             {
-                // Register new user account
                 var newUser = new User
                 {
                     Username = username.Trim(),
@@ -225,9 +203,6 @@ namespace StudentManagementSystem.Core.Data
             }
         }
 
-        /// <summary>
-        /// Deactivates user account linked to the given ID/Reg number.
-        /// </summary>
         public void DeactivateUserByIdNumber(string idNumber)
         {
             if (string.IsNullOrWhiteSpace(idNumber)) return;

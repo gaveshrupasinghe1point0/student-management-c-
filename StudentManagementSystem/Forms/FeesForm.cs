@@ -23,7 +23,7 @@ namespace StudentManagementSystem.Forms
 
         private void FeesForm_Load(object sender, EventArgs e)
         {
-            cmbStatus.SelectedIndex = 0; // Default to "Paid"
+            cmbStatus.SelectedIndex = 0; 
             LoadStudents();
             LoadFeesGrid();
         }
